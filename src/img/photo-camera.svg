@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>photo-camera</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="qha_design_home4" transform="translate(-998.000000, -512.000000)" fill="#AAB9C8" fill-rule="nonzero">
+            <g id="news_item_design_1" transform="translate(975.000000, 456.000000)">
+                <g id="content-box-desc" transform="translate(21.000000, 19.000000)">
+                    <g id="content-box">
+                        <g id="photo-camera" transform="translate(2.000000, 37.000000)">
+                            <path d="M11,7.5 C9.1773,7.5 7.7,9.1795 7.7,11.25 C7.7,13.32125 9.1773,15 11,15 C12.82226,15 14.3,13.32125 14.3,11.25 C14.3,9.1795 12.82226,7.5 11,7.5 Z M19.8,3.75 L17.16,3.75 C16.797,3.75 16.40584,3.43 16.29122,3.0385 L15.60878,0.71125 C15.49372,0.32 15.103,0 14.74,0 L7.26,0 C6.897,0 6.50584,0.32 6.39122,0.7115 L5.70878,3.03875 C5.59372,3.43 5.203,3.75 4.84,3.75 L2.2,3.75 C0.99,3.75 0,4.875 0,6.25 L0,17.5 C0,18.875 0.99,20 2.2,20 L19.8,20 C21.01,20 22,18.875 22,17.5 L22,6.25 C22,4.875 21.01,3.75 19.8,3.75 Z M11,17.5 C7.96246,17.5 5.5,14.70175 5.5,11.25 C5.5,7.7985 7.96246,5 11,5 C14.0371,5 16.5,7.7985 16.5,11.25 C16.5,14.70175 14.0371,17.5 11,17.5 Z M19.03,7.99825 C18.60496,7.99825 18.26,7.60675 18.26,7.12325 C18.26,6.64025 18.60496,6.24825 19.03,6.24825 C19.45548,6.24825 19.8,6.64025 19.8,7.12325 C19.8,7.60675 19.45526,7.99825 19.03,7.99825 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

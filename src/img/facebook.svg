@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="43px" viewBox="0 0 44 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="qha_design_home4" transform="translate(-400.000000, -115.000000)" fill="#AAB9C8" fill-rule="nonzero">
+            <g id="header_3" transform="translate(-54.000000, 67.000000)">
+                <g id="header">
+                    <g id="socialblock" transform="translate(454.000000, 48.000000)">
+                        <g id="facebook">
+                            <path d="M21.8827585,0 C9.79800429,0 0,9.61460575 0,21.4731581 C0,33.3317105 9.79800429,42.9463162 21.8827585,42.9463162 C33.9675126,42.9463162 43.7655169,33.3317105 43.7655169,21.4731581 C43.7655169,9.61195688 33.9675126,0 21.8827585,0 Z M27.5394366,21.4704209 L23.9533766,21.4730698 L23.9506772,34.3569117 L19.0297649,34.3569117 L19.0297649,21.4731581 L15.7473871,21.4731581 L15.7473871,17.0335626 L19.0297649,17.0309138 L19.0242761,14.4165667 C19.0242761,10.793 20.0253928,8.58931622 24.3718732,8.58931622 L27.9934753,8.58931622 L27.9934753,13.0315606 L25.7285905,13.0315606 C24.0354382,13.0315606 23.9533766,13.6515729 23.9533766,14.808423 L23.9478878,17.0309138 L28.0180398,17.0309138 L27.5394366,21.4704209 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

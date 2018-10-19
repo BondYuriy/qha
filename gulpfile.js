@@ -89,6 +89,12 @@ gulp.task("images", () => {
   );
 });
 
+gulp.task("fonts", () => {
+  return gulp
+    .src("./src/fonts/**/*.{woff,woff2,ttf}")
+    .pipe(gulp.dest("./build/fonts"));
+});
+
 // Таск слежения за изменениями файлов
 gulp.task("watch", () => {
   // Следим за изменениями в любом html файле и вызываем таск 'html' на каждом изменении
@@ -126,7 +132,7 @@ gulp.task("del:build", () => {
 // Таск который 1 раз собирает все статические файлы
 // Запускается из корня проекта командой npm run build
 gulp.task("build", function(done) {
-  sequence("del:build", "images", "css", "html", "js", done);
+  sequence("del:build", "images", "fonts", "css", "html", "js", done);
 });
 
 // Главный таск для разработки, сначала удаляет папку build,

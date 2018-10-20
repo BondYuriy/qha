@@ -7,9 +7,14 @@ ul {
   @extend %Reset;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   background-color: #f6f6f6;
   background-size: 100%;
+  position: relative;
 }
 
 .hidden {

@@ -6405,6 +6405,7 @@ a {
 }
 
 .header {
+	transition: linear .5s;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -6415,17 +6416,24 @@ a {
 }
 
 .asd {
+	transition: linear .5s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 0px 25px 0px;
 }
 
+.social {
+	transition: linear .5s;
+}
+
 .social ul {
+	transition: linear .5s;
 	display: flex;
 }
 
 .social ul li {
+	transition: linear .5s;
 	width: 44px;
 	height: 43px;
 	margin-right: 8px;
@@ -6436,18 +6444,25 @@ a {
 }
 
 .logo {
+	transition: linear .5s;
 	display: block;
 	width: 322px;
 	height: 54px;
 }
 
 .logo img {
+	transition: linear .5s;
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
+.search {
+	transition: linear .5s;
+}
+
 .search input {
+	transition: linear .5s;
 	border: 0;
 	display: none;
 	width: 70%;
@@ -6483,6 +6498,7 @@ a {
 }
 
 .search div {
+	transition: linear .5s;
 	display: block;
 	width: 40px;
 	height: 40px;
@@ -6500,37 +6516,44 @@ a {
 }
 
 .sss {
+	transition: linear .5s;
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
 }
 
 .nav_list {
+	transition: linear .5s;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .nav_list ul {
+	transition: linear .5s;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
 .nav_list li {
+	transition: linear .5s;
 	border-bottom: rgba(0, 0, 0, 0) solid 3px;
 }
 
 .nav_list a {
+	transition: linear .5s;
 	display: inline-block;
 	text-decoration: none;
 }
 
 .nav_blue {
+	transition: linear .5s;
 	flex: 0 0 70%;
 }
 
 .nav_blue a {
+	transition: linear .5s;
 	font-size: 20px;
 	color: #236092;
 }
@@ -6540,6 +6563,7 @@ a {
 }
 
 .languages {
+	transition: linear .5s;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -6547,6 +6571,7 @@ a {
 }
 
 .languages span {
+	transition: linear .5s;
 	display: inline-block;
 	width: 29px;
 	height: 26px;
@@ -6560,14 +6585,20 @@ a {
 }
 
 .lang_ligth-gray {
+	transition: linear .5s;
 	color: #aab9c8;
 }
 
+body.sticky-header {
+	transition: linear .5s;
+}
+
 body.sticky-header header {
-	height: 100px;
+	transition: linear .5s;
 }
 
 body.sticky-header .asd {
+	transition: linear .5s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -6580,10 +6611,16 @@ body.sticky-header .lang_ligth-gray {
 
 body.sticky-header .social {
 	display: none;
+	transition: linear .5s;
 }
 
 body.sticky-header .sss {
-	justify-content: center;
+	justify-content: flex-end;
+	transition: linear .5s;
+}
+
+.td {
+	transition: linear .5s;
 }
 
 .footer-nav {

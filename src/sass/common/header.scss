@@ -85,9 +85,15 @@
   }
 }
 
+.sss {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav_list {
   font-family: $Pf_Din;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 
   & ul {
@@ -107,6 +113,8 @@
 }
 
 .nav_blue {
+  flex: 0 0 70%;
+
   & a {
     font-size: 20px;
     color: $dark-blue;
@@ -139,4 +147,29 @@
 
 .lang_ligth-gray {
   color: $blue;
+}
+
+body.sticky-header {
+  header {
+    height: 100px;
+  }
+
+  .asd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 3px 0px;
+  }
+
+  .lang_ligth-gray {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .sss {
+    justify-content: center;
+  }
 }

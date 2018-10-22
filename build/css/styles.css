@@ -6405,7 +6405,7 @@ a {
 }
 
 .header {
-	transition: linear .5s;
+	position: relative;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -6415,25 +6415,18 @@ a {
 	z-index: 5;
 }
 
-.asd {
-	transition: linear .5s;
+.header-main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 0px 25px 0px;
 }
 
-.social {
-	transition: linear .5s;
-}
-
 .social ul {
-	transition: linear .5s;
 	display: flex;
 }
 
 .social ul li {
-	transition: linear .5s;
 	width: 44px;
 	height: 43px;
 	margin-right: 8px;
@@ -6444,25 +6437,19 @@ a {
 }
 
 .logo {
-	transition: linear .5s;
 	display: block;
 	width: 322px;
 	height: 54px;
+	z-index: 0;
 }
 
 .logo img {
-	transition: linear .5s;
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.search {
-	transition: linear .5s;
-}
-
 .search input {
-	transition: linear .5s;
 	border: 0;
 	display: none;
 	width: 70%;
@@ -6498,12 +6485,17 @@ a {
 }
 
 .search div {
-	transition: linear .5s;
 	display: block;
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	z-index: 100;
+}
+
+.search div img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .search:hover .search_input {
@@ -6515,45 +6507,37 @@ a {
 	background-color: rgba(170, 185, 200, 0.82);
 }
 
-.sss {
-	transition: linear .5s;
-	background-color: #fff;
+.menu {
 	display: flex;
 	justify-content: space-between;
 }
 
 .nav_list {
-	transition: linear .5s;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .nav_list ul {
-	transition: linear .5s;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
 .nav_list li {
-	transition: linear .5s;
 	border-bottom: rgba(0, 0, 0, 0) solid 3px;
 }
 
 .nav_list a {
-	transition: linear .5s;
 	display: inline-block;
 	text-decoration: none;
 }
 
 .nav_blue {
-	transition: linear .5s;
 	flex: 0 0 70%;
 }
 
 .nav_blue a {
-	transition: linear .5s;
 	font-size: 20px;
 	color: #236092;
 }
@@ -6563,7 +6547,6 @@ a {
 }
 
 .languages {
-	transition: linear .5s;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -6571,7 +6554,6 @@ a {
 }
 
 .languages span {
-	transition: linear .5s;
 	display: inline-block;
 	width: 29px;
 	height: 26px;
@@ -6585,20 +6567,10 @@ a {
 }
 
 .lang_ligth-gray {
-	transition: linear .5s;
 	color: #aab9c8;
 }
 
-body.sticky-header {
-	transition: linear .5s;
-}
-
-body.sticky-header header {
-	transition: linear .5s;
-}
-
-body.sticky-header .asd {
-	transition: linear .5s;
+body.sticky-header .header-main {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -6611,16 +6583,30 @@ body.sticky-header .lang_ligth-gray {
 
 body.sticky-header .social {
 	display: none;
-	transition: linear .5s;
 }
 
-body.sticky-header .sss {
+body.sticky-header .menu {
 	justify-content: flex-end;
-	transition: linear .5s;
+	padding-right: 70px;
 }
 
-.td {
-	transition: linear .5s;
+body.sticky-header .logo {
+	width: 161px;
+	height: 27px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+
+body.sticky-header .search {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+}
+
+body.sticky-header .search div {
+	width: 34px;
+	height: 34px;
 }
 
 .footer-nav {

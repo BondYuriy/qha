@@ -58,12 +58,16 @@
 }
 
 .lang_gray {
-  color: $dark-gray;
   margin-right: 17%;
 
-  & span:hover {
-    color: $blue;
-    border: 1px solid $blue;
+  & a {
+    color: $dark-gray;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+      border: 1px solid $blue;
+    }
   }
 }
 

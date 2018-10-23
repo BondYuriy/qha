@@ -19,9 +19,27 @@
               <div class="header-main">
                 <div class="social">
                   <ul>
-                    <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
-                    <li><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+                    <li>
+                      <a href="#">
+                        <svg width="44" height="43">
+                          <use href="img/svg-sprite.svg#icon-facebook" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg width="44" height="43">
+                          <use href="img/svg-sprite.svg#icon-twitter" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg width="44" height="43">
+                          <use href="img/svg-sprite.svg#icon-youtube" />
+                        </svg>
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <div class="logo">
@@ -32,7 +50,11 @@
                 <div class="search">
                   <form action="#">
                     <input class="search_input" type="text" placeholder="Что желаете найти?">
-                    <div><img src="img/search1.svg" alt="search"></div>
+                    <div>
+                      <svg width="44" height="43">
+                        <use href="img/svg-sprite.svg#icon-search1" />
+                      </svg>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -45,20 +67,39 @@
           <div class="col-12">
             <div class="menu">
               <div class="languages lang_ligth-gray">
-                <span>рус</span>
-                <span>укр</span>
-                <span>eng</span>
-                <span>tr</span>
+                <a href="#">рус</a>
+                <a href="#">укр</a>
+                <a href="#">eng</a>
+                <a href="#">tr</a>
               </div>
-              <nav class="nav_list nav_blue ">
-                <ul>
-                  <li><a href="#">главная</a></li>
-                  <li><a href="#">новости</a></li>
-                  <li><a href="#">по полочкам</a></li>
-                  <li><a href="#">мнение</a></li>
-                  <li><a href="#">крымские татары</a></li>
-                  <li><a href="#">подкасты</a></li>
-                </ul>
+              <nav class="navbar navbar-expand-md nav_blue">
+                <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">по полочкам</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">мнение</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">крымские татары</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">подкасты</a>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>
@@ -210,10 +251,10 @@
             <div class="col-5">
               <div class="footer-box">
                 <div class="languages lang_gray">
-                  <span>рус</span>
-                  <span>укр</span>
-                  <span>eng</span>
-                  <span>tr</span>
+                  <a href="#">рус</a>
+                  <a href="#">укр</a>
+                  <a href="#">eng</a>
+                  <a href="#">tr</a>
                 </div>
                 <div class="social-footer">
                   <ul>

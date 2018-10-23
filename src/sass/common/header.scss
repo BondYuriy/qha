@@ -147,14 +147,15 @@
 .languages {
   font-family: $Pf_Din;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
+
 
   & a {
     display: inline-block;
     width: 29px;
     height: 26px;
-    line-height: 24px;
+    line-height: 26px;
     text-align: center;
     text-decoration: none;
 

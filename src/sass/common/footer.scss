@@ -5,7 +5,7 @@
 .footer-nav_list {
   padding: 10px 0px;
   font-family: $Pf_Din;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   text-transform: uppercase;
 
@@ -87,10 +87,21 @@
   }
 }
 
-.copyright span {
-  color: $dark-gray;
-  font-family: $Pf_Din;
-  font-size: 20px;
+.copyright {
+  & span {
+    color: $dark-gray;
+    font-family: $Pf_Din;
+    font-size: 20px;
+
+    & a {
+      color: $dark-gray;
+      text-decoration: none;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
 }
 
 .mt-30 {

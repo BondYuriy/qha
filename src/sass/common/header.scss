@@ -149,21 +149,22 @@
 
 .languages {
   font-family: $Pf_Din;
-  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
 
   & a {
     display: inline-block;
-    width: 29px;
+    width: 27px;
     height: 26px;
-    line-height: 26px;
+    line-height: 27px;
     text-align: center;
     text-decoration: none;
+    font-size: 17px;
 
     &:hover {
       border-radius: 5px;
-      border: 1px solid $blue;
+      border: 1px solid rgba(170, 185, 200, 0);
+      background: rgba(170, 185, 200, 0.3);
     }
 
     &.active {
@@ -220,5 +221,54 @@ body.sticky-header {
       width: 34px;
       height: 34px;
     }
+  }
+}
+
+.radio-header {
+  display: inline-block;
+  position: absolute;
+  width: 168px;
+  top: 0;
+  right: 60px;
+  z-index: 0;
+  border-radius: 8px 8px 0px 0px;
+
+  &:hover {
+    background-color: rgba(50, 85, 118, 0.89);
+
+    & img {
+      box-shadow: 0 1px 12px rgba(75, 139, 192, 0.73);
+    }
+  }
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    z-index: 10;
+  }
+
+  & .radio-header_menu {
+    display: none;
+    width: 168px;
+    height: 192px;
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgba(50, 85, 118, 0.89);
+    padding: 8px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    & a {
+      margin: auto;
+    }
+  }
+
+  &:hover .radio-header_menu {
+    display: block;
   }
 }

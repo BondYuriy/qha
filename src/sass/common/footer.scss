@@ -43,6 +43,18 @@
 }
 
 .nav_gray {
+  & ul {
+    justify-content: flex-start;
+
+    & li {
+      margin-right: 15%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
   & a {
     color: $dark-gray;
     font-size: 19px;

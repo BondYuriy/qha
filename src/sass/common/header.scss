@@ -6,7 +6,7 @@
   background-color: $white;
   box-shadow: 0 2px 22px rgba(170, 185, 200, 0.66);
   padding-bottom: 1px;
-  z-index: 5;
+  z-index: 100;
 }
 
 .header-main {
@@ -72,7 +72,6 @@
       font-family: $OpenSans_Regular;
       font-size: 16px;
     }
-
   }
 
   & div {
@@ -122,6 +121,10 @@
 
   & li {
     border-bottom: rgba(0, 0, 0, 0) solid 3px;
+
+    &.active {
+      border-bottom: $dark-blue solid 3px;
+    }
   }
 
   & a {
@@ -150,7 +153,6 @@
   font-weight: 400;
   text-transform: uppercase;
 
-
   & a {
     display: inline-block;
     width: 29px;
@@ -163,6 +165,12 @@
       border-radius: 5px;
       border: 1px solid $blue;
     }
+
+    &.active {
+      border-radius: 5px;
+      border: 1px solid $blue;
+      color: $blue;
+    }
   }
 }
 
@@ -171,6 +179,10 @@
 }
 
 body.sticky-header {
+  .header {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
   .header-main {
     display: flex;
     justify-content: space-between;

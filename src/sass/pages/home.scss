@@ -207,7 +207,7 @@ main {
         content: "";
         width: 19px;
         height: 20px;
-        background-image: url(../img/calendar.svg);
+        background-image: url("../img/calendar.svg");
         position: absolute;
         left: 0px;
         top: 6px;
@@ -272,7 +272,7 @@ main {
   content: "";
   width: 22px;
   height: 20px;
-  background-image: url(../img/photo-camera.svg);
+  background-image: url("../img/photo-camera.svg");
   margin-right: 5px;
 }
 

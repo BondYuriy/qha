@@ -194,7 +194,6 @@ main {
 .news_small_box {
   & .date-1 {
     position: relative;
-    padding-left: 12px;
 
     & span {
       color: $blue;
@@ -208,9 +207,8 @@ main {
         width: 19px;
         height: 20px;
         background-image: url("../img/calendar.svg");
-        position: absolute;
-        left: 0px;
-        top: 6px;
+        margin-right: 3px;
+        vertical-align: middle;
       }
     }
   }
@@ -228,15 +226,12 @@ main {
   & p {
     margin: 0;
     display: none;
-    overflow: auto;
   }
 }
 
 .scrollbar::-webkit-scrollbar {
   width: 4px;
-  height: 97px;
-  position: absolute;
-  left: 0;
+  height: auto;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
@@ -254,8 +249,8 @@ main {
   justify-content: space-between;
 
   & .news-item_info {
-    flex: 0 0 55%;
-    padding-right: 10px;
+    flex: 0 0 57%;
+    padding-right: 5px;
 
     & .title-news {
       font-size: 22px;
@@ -263,7 +258,7 @@ main {
   }
 
   & .news-item_text {
-    flex: 0 0 45%;
+    flex: 0 0 43%;
   }
 }
 
@@ -334,6 +329,28 @@ main {
 
   &:hover {
     box-shadow: 0 0 18px rgba(35, 96, 146, 0.23);
+    padding-top: 5px;
+
+    & .small-box-info {
+      margin-bottom: 10px;
+
+      .title-news_gray {
+        font-size: 17px;
+      }
+    }
+
+    & .news-item_text {
+      color: #5d6267;
+
+      p {
+        display: block;
+        padding: 0px 15px;
+      }
+    }
+
+    & .date-1 {
+      background-color: rgba(128, 143, 156, 0.84);
+    }
   }
 
   & .small-box-info {

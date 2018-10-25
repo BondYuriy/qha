@@ -6997,7 +6997,6 @@ main {
 .news_line_noback .date-1,
 .news_small_box .date-1 {
 	position: relative;
-	padding-left: 12px;
 }
 
 .news-item_info .date-1 span,
@@ -7016,10 +7015,9 @@ main {
 	content: "";
 	width: 19px;
 	height: 20px;
-	background-image: url(../img/calendar.svg);
-	position: absolute;
-	left: 0px;
-	top: 6px;
+	background-image: url("../img/calendar.svg");
+	margin-right: 3px;
+	vertical-align: middle;
 }
 
 .news-item_text {
@@ -7035,14 +7033,11 @@ main {
 .news-item_text p {
 	margin: 0;
 	display: none;
-	overflow: auto;
 }
 
 .scrollbar::-webkit-scrollbar {
 	width: 4px;
-	height: 97px;
-	position: absolute;
-	left: 0;
+	height: auto;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
@@ -7061,8 +7056,8 @@ main {
 }
 
 .box-50:hover .news-item_info {
-	flex: 0 0 55%;
-	padding-right: 10px;
+	flex: 0 0 57%;
+	padding-right: 5px;
 }
 
 .box-50:hover .news-item_info .title-news {
@@ -7070,7 +7065,7 @@ main {
 }
 
 .box-50:hover .news-item_text {
-	flex: 0 0 45%;
+	flex: 0 0 43%;
 }
 
 .icon-news::before {
@@ -7078,7 +7073,7 @@ main {
 	content: "";
 	width: 22px;
 	height: 20px;
-	background-image: url(../img/photo-camera.svg);
+	background-image: url("../img/photo-camera.svg");
 	margin-right: 5px;
 }
 
@@ -7141,6 +7136,28 @@ main {
 
 .news_small_box:hover {
 	box-shadow: 0 0 18px rgba(35, 96, 146, 0.23);
+	padding-top: 5px;
+}
+
+.news_small_box:hover .small-box-info {
+	margin-bottom: 10px;
+}
+
+.news_small_box:hover .small-box-info .title-news_gray {
+	font-size: 17px;
+}
+
+.news_small_box:hover .news-item_text {
+	color: #5d6267;
+}
+
+.news_small_box:hover .news-item_text p {
+	display: block;
+	padding: 0px 15px;
+}
+
+.news_small_box:hover .date-1 {
+	background-color: rgba(128, 143, 156, 0.84);
 }
 
 .news_small_box .small-box-info {

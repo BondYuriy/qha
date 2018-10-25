@@ -482,12 +482,120 @@ main {
   }
 }
 
-.article_4 {
-  margin-bottom: 20px;
-}
-
-.best-article {
+.best-news {
   height: 593px;
+  position: relative;
+  border-radius: 13px;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 13px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(170, 185, 200, 0) 0%,
+      rgba(107, 124, 142, 0.65) 37%,
+      rgba(50, 69, 88, 0.8) 100%
+    );
+    z-index: 1;
+  }
+
+  & .chif-img {
+    @extend %img;
+    border-radius: 13px;
+    filter: blur(8px);
+  }
+
+  & .best-news_container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 15px 15px 50px 15px;
+    border-radius: 13px;
+
+    & h1 {
+      margin: 0;
+      color: $white;
+      font-family: $Pf_Din;
+      font-size: 35px;
+      font-weight: 500;
+      line-height: 35px;
+      text-align: center;
+    }
+
+    & .best-text {
+      display: block;
+      color: $white;
+      font-family: $Pf_Din;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    & .best-news_box {
+      display: flex;
+      justify-content: space-between;
+      align-content: space-between;
+      flex-wrap: wrap;
+
+      & .best-news_item {
+        flex: 0 0 48%;
+        height: 108px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+
+        &:nth-last-child(-n + 2) {
+          margin-bottom: 0;
+        }
+
+        & .news-num {
+          flex: 0 0 16%;
+          height: 108px;
+          border-radius: 8px;
+          background-color: rgba(170, 185, 200, 0.67);
+          text-align: center;
+
+          & span {
+            color: $white;
+            font-family: $Pf_Din;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 108px;
+          }
+        }
+
+        & .news-info {
+          flex: 0 0 80%;
+          position: relative;
+
+          & .title-news {
+            color: $light-gray;
+            font-family: $Pf_Din;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 5px 0px;
+          }
+
+          & .date-1 {
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .article_6,
@@ -518,7 +626,7 @@ main {
 .news-item,
 .news-sidebar_item,
 .news-item_2,
-.best-article,
+.best-news,
 .article_6,
 .article_7,
 .article_8,

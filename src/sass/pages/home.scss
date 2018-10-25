@@ -325,7 +325,8 @@ main {
   height: 220px;
   background-color: #ffffff;
   border-radius: 13px;
-  padding-top: 15px;
+  padding: 15px;
+  position: relative;
 
   &:hover {
     box-shadow: 0 0 18px rgba(35, 96, 146, 0.23);
@@ -336,27 +337,31 @@ main {
 
       .title-news_gray {
         font-size: 17px;
+        line-height: 20px;
       }
     }
 
     & .news-item_text {
       color: #5d6267;
+      height: auto;
 
       p {
         display: block;
-        padding: 0px 15px;
       }
     }
 
     & .date-1 {
       background-color: rgba(128, 143, 156, 0.84);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0px;
     }
   }
 
   & .small-box-info {
     display: flex;
     flex-direction: column;
-    padding: 0px 15px;
 
     & .title-news_gray {
       color: #5d6267;

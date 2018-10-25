@@ -7219,10 +7219,6 @@ main {
 	border-radius: 13px;
 }
 
-.news-item_2 .icon-box {
-	z-index: 1000;
-}
-
 .news-item_2 .news-item_box-2 {
 	position: absolute;
 	top: 98px;

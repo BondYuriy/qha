@@ -352,10 +352,6 @@ main {
 
     & .date-1 {
       background-color: rgba(128, 143, 156, 0.84);
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0px;
     }
   }
 
@@ -378,10 +374,13 @@ main {
   }
 
   & .date-1 {
-    margin-top: auto;
     height: 44px;
     border-radius: 0 0 13px 13px;
     background-color: rgba(170, 185, 200, 0.41);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
 
     & span {
       line-height: 44px;
@@ -390,8 +389,60 @@ main {
   }
 }
 
-.article_3 {
-  height: 460px;
+.news-item_2 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 13px;
+
+  &::before {
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 13px;
+    background-image: linear-gradient(
+      253deg,
+      rgba(170, 185, 200, 0) 0%,
+      rgba(107, 124, 142, 0.48) 38%,
+      rgba(50, 69, 88, 0.92) 100%
+    );
+    z-index: 1;
+  }
+
+  & .chif-img {
+    @extend %img;
+    border-radius: 13px;
+  }
+
+  & .icon-box {
+    z-index: 1000;
+  }
+
+  & .news-item_box-2 {
+    position: absolute;
+    top: 98px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 2;
+
+    & .date-1 {
+      margin-top: 21px;
+    }
+
+    & .sticker-partners {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &:hover .chif-img {
+    filter: blur(8px);
+  }
+
 }
 
 .article_4,
@@ -434,8 +485,7 @@ main {
 .top-article,
 .news-item,
 .news-sidebar_item,
-.article_2,
-.article_3,
+.news-item_2,
 .article_4,
 .article_5,
 .best-article,

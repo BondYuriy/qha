@@ -26,3 +26,21 @@ a {
   height: 70px;
   background-color: $dark-blue;
 }
+
+.small-icon_youtube::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 15px;
+  background-image: url("../img/youtube-play-button.svg");
+  margin-right: 10px;
+}
+
+.small-icon_photo::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/photo-camera.svg");
+  margin-right: 10px;
+}

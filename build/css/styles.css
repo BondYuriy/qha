@@ -6354,7 +6354,7 @@ ul {
 .news-item .chif-img,
 .news-item_2 .chif-img,
 .podcust .chif-img_box img,
-.best-news .chif-img {
+.best-news img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -6382,6 +6382,12 @@ a {
 
 .hidden {
 	display: none;
+}
+
+.privacy-policy {
+	width: 100%;
+	height: 70px;
+	background-color: #236092;
 }
 
 .btn {
@@ -7132,6 +7138,15 @@ main {
 	position: relative;
 }
 
+.news_small_box .small-box-info .small-news_icon::before {
+	display: inline-block;
+	content: "";
+	width: 22px;
+	height: 15px;
+	background-image: url("../img/youtube-play-button.svg");
+	margin-right: 10px;
+}
+
 .news_small_box:hover {
 	box-shadow: 0 0 18px rgba(35, 96, 146, 0.23);
 	padding-top: 5px;
@@ -7260,7 +7275,7 @@ main {
 }
 
 .podcust .podcust-news {
-	padding: 15px;
+	padding: 15px 15px 43px 15px;
 	background-color: #fff;
 	border-radius: 0px 13px 13px 0px;
 	position: relative;
@@ -7303,7 +7318,7 @@ main {
 	z-index: 1;
 }
 
-.best-news .chif-img {
+.best-news img {
 	border-radius: 13px;
 	-webkit-filter: blur(8px);
 	filter: blur(8px);
@@ -7320,7 +7335,7 @@ main {
 	border-radius: 13px;
 }
 
-.best-news .best-news_container h1 {
+.best-news .best-news_container h2 {
 	margin: 0;
 	color: #fff;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
@@ -7328,6 +7343,15 @@ main {
 	font-weight: 500;
 	line-height: 35px;
 	text-align: center;
+}
+
+.best-news .best-news_container h2::before {
+	display: inline-block;
+	content: "";
+	width: 28px;
+	height: 25px;
+	background-image: url("../img/warning.svg");
+	margin-right: 10px;
 }
 
 .best-news .best-news_container .best-text {
@@ -7379,6 +7403,7 @@ main {
 .best-news .best-news_container .best-news_box .best-news_item .news-info {
 	flex: 0 0 80%;
 	position: relative;
+	padding-bottom: 28px;
 }
 
 .best-news .best-news_container .best-news_box .best-news_item .news-info .title-news {
@@ -7394,24 +7419,117 @@ main {
 	bottom: 0;
 }
 
-.article_6,
-.article_7 {
+.news-rightbox {
+	width: 100%;
 	height: 460px;
+	border-radius: 13px;
+	background-color: #fff;
 }
 
-.article_8,
-.article_9 {
-	height: 460px;
-}
-
-.opinion {
+.opinion h2 {
+	margin: 0;
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 35px;
 	text-align: center;
+	margin-bottom: 58px;
 }
 
-.opinion_1,
-.opinion_2,
-.opinion_3 {
-	height: 206px;
+.opinion h2::before {
+	display: inline-block;
+	content: "";
+	width: 37px;
+	height: 30px;
+	background-image: url("../img/support.svg");
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.opinion .quotes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.opinion .quotes .quotes-item {
+	flex: 0 0 31%;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
+	border-radius: 13px;
+	padding: 12px 12px 40px 12px;
+	position: relative;
+}
+
+.opinion .quotes .quotes-item .opinion-author {
+	position: relative;
+	width: 94px;
+	height: 94px;
+	background-color: #ffffff;
+	box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.11);
+	border-radius: 50%;
+	position: absolute;
+	top: -30px;
+	left: 0;
+}
+
+.opinion .quotes .quotes-item .opinion-author img {
+	display: block;
+	width: 87%;
+	height: auto;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.opinion .quotes .quotes-item .quotes-icon_box {
+	flex: 0 0 25%;
+	position: relative;
+}
+
+.opinion .quotes .quotes-item .quotes-icon_box .quotes-icon {
+	display: block;
+	width: 30px;
+	height: 28px;
+	background-image: url("../img/quote.svg");
+	position: absolute;
+	left: 50%;
+	top: 57%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.opinion .quotes .quotes-item .quotes-info {
+	flex: 0 0 70%;
+}
+
+.opinion .quotes .quotes-item .quotes-info .author-name {
+	color: #5d6267;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.opinion .quotes .quotes-item .quotes-info p {
+	color: #5d6267;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 18px;
+}
+
+.opinion .quotes .quotes-item .quotes-info .date-1 {
+	position: absolute;
+	bottom: 12px;
+}
+
+.opinion .quotes .quotes-item:hover {
+	box-shadow: 0px 0px 18px rgba(35, 96, 146, 0.3);
 }
 
 .radio {
@@ -7423,13 +7541,6 @@ main {
 .news-sidebar_item,
 .news-item_2,
 .best-news,
-.article_6,
-.article_7,
-.article_8,
-.article_9,
-.opinion_1,
-.opinion_2,
-.opinion_3,
 .radio {
 	width: 100%;
 	border-radius: 13px;
@@ -7441,13 +7552,6 @@ main {
 .news-sidebar_item:hover,
 .news-item_2:hover,
 .best-news:hover,
-.article_6:hover,
-.article_7:hover,
-.article_8:hover,
-.article_9:hover,
-.opinion_1:hover,
-.opinion_2:hover,
-.opinion_3:hover,
 .radio:hover {
 	box-shadow: 0px 0px 18px rgba(35, 96, 146, 0.3);
 }

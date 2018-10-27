@@ -190,6 +190,7 @@ main {
 }
 
 .date-1 {
+  display: inline-block;
   position: relative;
 
   & span {
@@ -264,7 +265,7 @@ main {
   border-radius: 5px;
   border: 1px solid #aab9c8;
   text-align: center;
-  line-height: 28px;
+  line-height: 23px;
   vertical-align: middle;
 }
 
@@ -469,6 +470,7 @@ main {
     & .date-1 {
       position: absolute;
       bottom: 15px;
+      left: 15px;
     }
   }
 
@@ -654,8 +656,6 @@ main {
         bottom: 0;
       }
     }
-
-
   }
 }
 
@@ -765,16 +765,192 @@ main {
   }
 }
 
-.radio {
-  height: 160px;
+.radio-block {
+  background-color: #fff;
+  border-radius: 13px;
+
+  & .radio {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    & .radio-box {
+      flex: 0 0 23%;
+      position: relative;
+
+      & .icon-radio {
+        position: relative;
+
+        & img {
+          @extend %img;
+        }
+
+        & a {
+          display: inline-block;
+          min-width: 52px;
+          min-height: 16px;
+          border-radius: 5px;
+          background-color: #c63c3c;
+          color: #fff;
+          font-family: $Pf_Din;
+          font-size: 13px;
+          font-weight: 400;
+          text-align: center;
+          text-decoration: none;
+          position: absolute;
+          bottom: 1px;
+          right: 0;
+
+          &:hover {
+            opacity: 0.8;
+            color: $white;
+          }
+        }
+      }
+
+      & .radio-box_item1 {
+        display: flex;
+        padding-top: 10px;
+
+        & .icon-play {
+          flex: 0 0 13%;
+
+          & img {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+          }
+        }
+
+        & a {
+          color: $blue;
+          font-family: $Pf_Din;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+
+      & .radio-box_item2 {
+        & .date-1 {
+          position: absolute;
+          bottom: 5px;
+          left: 0;
+        }
+
+        & a {
+          display: inline-block;
+          width: 51px;
+          height: 16px;
+          border-radius: 5px;
+          background-color: $blue;
+          color: $white;
+          font-family: $Pf_Din;
+          font-size: 13px;
+          font-weight: 400;
+          text-align: center;
+          text-decoration: none;
+          line-height: 16px;
+          margin-left: 80px;
+          position: absolute;
+          bottom: 5px;
+          right: 0;
+
+          &:hover {
+            opacity: 0.8;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  & .marquee-box {
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 13px 13px;
+    background-color: rgba(170, 185, 200, 0.41);
+
+    & .radio-btn {
+      flex: 0 0 13%;
+      padding-left: 8px;
+
+      & a {
+        display: inline-block;
+        width: 159px;
+        height: 29px;
+        border-radius: 5px;
+        background-color: $blue-btn;
+        color: $light-gray;
+        font-family: $Pf_Din;
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 29px;
+        text-decoration: none;
+
+        &::before {
+          display: inline-block;
+          content: "";
+          width: 11px;
+          height: 10px;
+          background-color: #e6e6e6;
+          border-radius: 50%;
+          margin-right: 10px;
+          line-height: 29px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+          color: $white;
+        }
+      }
+    }
+
+    & .marquee {
+      flex: 0 0 82%;
+      overflow: hidden;
+      white-space: nowrap;
+
+      .marquee-items {
+        display: inline-block;
+        animation: marquee 20s linear infinite;
+
+        & a {
+          color: $blue;
+          font-family: $Pf_Din;
+          font-size: 20px;
+          font-weight: 400;
+          margin-right: 43px;
+
+          & span {
+            color: $gray;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(100%);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    }
+  }
 }
 
 .top-article,
 .news-item,
 .news-sidebar_item,
 .news-item_2,
-.best-news,
-.radio {
+.best-news {
   width: 100%;
   border-radius: 13px;
   background-color: $blue;

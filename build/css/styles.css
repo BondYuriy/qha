@@ -7572,7 +7572,7 @@ main {
 	position: relative;
 }
 
-.radio-block .radio .radio-box .icon-radio a {
+.radio-block .radio .radio-box .icon-radio .radio-elem {
 	display: inline-block;
 	min-width: 52px;
 	min-height: 16px;
@@ -7589,7 +7589,7 @@ main {
 	right: 0;
 }
 
-.radio-block .radio .radio-box .icon-radio a:hover {
+.radio-block .radio .radio-box .icon-radio .radio-elem:hover {
 	opacity: 0.8;
 	color: #fff;
 }

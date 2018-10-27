@@ -785,7 +785,7 @@ main {
           @extend %img;
         }
 
-        & a {
+        & .radio-elem {
           display: inline-block;
           min-width: 52px;
           min-height: 16px;

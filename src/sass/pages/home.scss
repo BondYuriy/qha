@@ -89,7 +89,9 @@ main {
       color: $white;
       font-family: $OpenSans_Regular;
       font-size: 13px;
+      font-weight: 300;
       font-style: italic;
+      padding-top: 10px;
     }
   }
 }
@@ -99,9 +101,13 @@ main {
   color: $light-gray;
   font-family: $Pf_Din;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 10px;
   line-height: 26px;
+
+  & strong {
+    font-weight: 400;
+  }
 
   &:hover {
     color: $light-gray;
@@ -217,6 +223,7 @@ main {
   font-size: 13px;
   line-height: 20px;
   font-style: italic;
+  font-weight: 300;
   padding-top: 15px;
   overflow-y: scroll;
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,700");
 
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
@@ -6579,7 +6579,7 @@ a {
 	line-height: 27px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 14px;
 }
 
 .languages a:hover {
@@ -6695,26 +6695,26 @@ body.sticky-header .search svg {
 	background-color: #236092;
 }
 
-.footer-nav_list {
-	padding: 10px 0px;
+.footer-nav .footer-nav_list {
+	padding: 18px 0px;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
-.footer-nav_list ul {
+.footer-nav .footer-nav_list ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.footer-nav_list a {
+.footer-nav .footer-nav_list a {
 	display: inline-block;
 	text-decoration: none;
 	color: #aab9c8;
 }
 
-.footer-nav_list a:hover {
+.footer-nav .footer-nav_list a:hover {
 	color: #fff;
 }
 
@@ -6723,68 +6723,63 @@ body.sticky-header .search svg {
 	padding: 45px 0px 110px 0px;
 }
 
-.logo_2 {
+.footer-main .logo_2 {
 	display: block;
-	width: 336px;
+	width: 100%;
 	height: 56px;
 }
 
-.logo_2 img {
+.footer-main .logo_2 img {
 	display: block;
 	width: 100%;
 	height: auto;
 }
 
-.nav_gray ul {
-	justify-content: flex-start;
+.footer-main .nav_gray ul {
+	display: flex;
+	justify-content: space-between;
 }
 
-.nav_gray ul li {
-	margin-right: 15%;
-}
-
-.nav_gray ul li:last-child {
-	margin-right: 0;
-}
-
-.nav_gray a {
+.footer-main .nav_gray a {
 	color: #707579;
 	font-size: 19px;
+	font-weight: 500;
 }
 
-.nav_gray a:hover {
+.footer-main .nav_gray a:hover {
 	color: #aab9c8;
 }
 
 .footer-box {
 	display: flex;
+	justify-content: space-between;
 }
 
-.lang_gray {
-	margin-right: 17%;
-}
-
-.lang_gray a {
+.footer-box .lang_gray a {
 	color: #707579;
 	text-decoration: none;
 }
 
-.lang_gray a:hover {
+.footer-box .lang_gray a.active {
+	color: #aab9c8;
+}
+
+.footer-box .lang_gray a:hover {
 	color: #aab9c8;
 	border: 1px solid #aab9c8;
 }
 
-.social-footer ul {
+.footer-box .social-footer ul {
 	display: flex;
 }
 
-.social-footer ul li {
+.footer-box .social-footer ul li {
 	width: 26px;
 	height: 26px;
 	margin-right: 10px;
 }
 
-.social-footer ul li:last-child {
+.footer-box .social-footer ul li:last-child {
 	margin-right: 0;
 }
 
@@ -6896,7 +6891,9 @@ main {
 	color: #fff;
 	font-family: "Open Sans", sans-serif;
 	font-size: 13px;
+	font-weight: 300;
 	font-style: italic;
+	padding-top: 10px;
 }
 
 .title-news {
@@ -6904,9 +6901,13 @@ main {
 	color: #e6e6e6;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 24px;
-	font-weight: 400;
+	font-weight: 300;
 	margin-top: 10px;
 	line-height: 26px;
+}
+
+.title-news strong {
+	font-weight: 400;
 }
 
 .title-news:hover {
@@ -7010,6 +7011,7 @@ main {
 	font-size: 13px;
 	line-height: 20px;
 	font-style: italic;
+	font-weight: 300;
 	padding-top: 15px;
 	overflow-y: scroll;
 }

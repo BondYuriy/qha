@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0px 25px 0px;
+  padding: 40px 0px;
 }
 
 .social {
@@ -41,10 +41,11 @@
 }
 
 .logo {
+  justify-self: center;
   display: block;
   width: 322px;
   height: 54px;
-  z-index: 0;
+  margin-right: 60px;
 
   & img {
     display: block;
@@ -103,6 +104,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar,
@@ -120,6 +122,7 @@
   }
 
   & li {
+    padding: 5px 0px;
     border-bottom: rgba(0, 0, 0, 0) solid 3px;
 
     &.active {
@@ -135,7 +138,7 @@
 }
 
 .nav_blue {
-  flex: 0 0 70%;
+  flex: 0 0 55%;
 
   & li:hover {
     border-bottom: $dark-blue solid 3px;
@@ -212,6 +215,10 @@ body.sticky-header {
     top: 10px;
   }
 
+  .navbar ul li {
+    padding: 0;
+  }
+
   .search {
     position: absolute;
     right: 15px;
@@ -222,50 +229,124 @@ body.sticky-header {
       height: 34px;
     }
   }
+
+  & .radio-header {
+    display: none;
+  }
 }
 
 .radio-header {
   display: inline-block;
-  position: absolute;
   width: 168px;
-  top: 0;
-  right: 60px;
-  z-index: 0;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px;
+  position: relative;
+  padding-bottom: 6px;
 
-  &:hover {
-    background-color: rgba(50, 85, 118, 0.89);
+  & .icon-radio_box {
+    position: relative;
 
     & img {
-      box-shadow: 0 1px 12px rgba(75, 139, 192, 0.73);
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
     }
-  }
 
-  & img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    z-index: 10;
+    & div {
+      width: 42px;
+      height: 13px;
+      color: #fff;
+      font-family: $Pf_Din;
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $red;
+      border-radius: 5px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
 
   & .radio-header_menu {
     display: none;
     width: 168px;
-    height: 192px;
     box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
     border-radius: 0px 0px 8px 8px;
     background-color: rgba(50, 85, 118, 0.89);
-    padding: 8px;
+    padding: 8px 8px 8px 8px;
     position: absolute;
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: -1;
+    margin-top: -5px;
 
-    & a {
-      margin: auto;
+    & .radio-menu_item-box {
+      height: 160px;
+      overflow-y: scroll;
+
+      & .radio-menu_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & .play-box {
+          flex: 0 0 18%;
+          display: inline-block;
+          width: 23px;
+          height: 23px;
+          background-image: url("../img/play.svg");
+          background-repeat: no-repeat;
+        }
+
+        & .play-list {
+          flex: 0 0 77%;
+
+          & span {
+            display: inline-block;
+            color: $gray;
+            font-family: $Pf_Din;
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 3px;
+          }
+
+          & a {
+            display: block;
+            color: $blue;
+            font-family: $Pf_Din;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+        }
+      }
     }
+
+    & .btn {
+      display: block;
+      margin: auto;
+      margin-top: 5px;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 17px;
+        height: 17px;
+        // background-image: url("../../img/speaker.svg");
+      }
+    }
+  }
+
+  &:hover img {
+    box-shadow: 0 1px 12px rgba(75, 139, 192, 0.73);
   }
 
   &:hover .radio-header_menu {

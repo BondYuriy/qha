@@ -1,5 +1,5 @@
 main {
-  padding: 185px 0px 65px 0px;
+  padding: 217px 0px 65px 0px;
 }
 
 .mb-35 {
@@ -211,7 +211,7 @@ main {
       width: 19px;
       height: 20px;
       background-image: url("../img/calendar.svg");
-      margin-right: 3px;
+      margin-right: 10px;
       vertical-align: middle;
     }
   }
@@ -294,9 +294,13 @@ main {
       color: #5d6267;
       font-family: $Pf_Din;
       font-size: 24px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 29px;
       margin-top: 10px;
+
+      & strong {
+        font-weight: 500;
+      }
     }
   }
 
@@ -335,9 +339,13 @@ main {
       color: #5d6267;
       font-family: $Pf_Din;
       font-size: 20px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 26px;
       margin-top: 10px;
+
+      & strong {
+        font-weight: 500;
+      }
     }
   }
 
@@ -496,8 +504,12 @@ main {
       color: #5d6267;
       font-family: $Pf_Din;
       font-size: 19px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 25px;
+
+      & strong {
+        font-weight: 500;
+      }
     }
 
     & .date-1 {
@@ -626,6 +638,10 @@ main {
             font-size: 20px;
             font-weight: 400;
             margin: 5px 0px;
+
+            & strong {
+              font-weight: 500;
+            }
           }
 
           & .date-1 {
@@ -649,13 +665,13 @@ main {
   }
 
   & .news-rightbox_item {
-    padding: 52px 18px 28px 31px;
+    padding: 40px 18px 28px 30px;
     border-radius: 8px;
     box-shadow: 2px 0 10px -1px rgba(0, 0, 0, 0.07);
   }
 
   & .news-rightbox_item2 {
-    padding: 52px 30px 28px 34px;
+    padding: 40px 30px 28px 30px;
   }
 
   & .news-rightbox_item,
@@ -664,9 +680,7 @@ main {
 
     & .news-rightbox_box {
       min-height: 100px;
-      padding-bottom: 28px;
-      position: relative;
-      margin-bottom: 35px;
+      margin-bottom: 28px;
 
       &:last-child {
         margin-bottom: 0;
@@ -679,14 +693,17 @@ main {
         font-weight: 400;
         line-height: 22px;
 
+        & strong {
+          font-weight: 500;
+        }
+
         &:hover {
           color: $blue;
         }
       }
 
       & .date-1 {
-        position: absolute;
-        bottom: 0;
+        margin-top: 10px;
       }
     }
   }
@@ -719,7 +736,7 @@ main {
     justify-content: space-between;
 
     & .quotes-item {
-      flex: 0 0 31%;
+      flex: 0 0 31.5%;
       display: flex;
       justify-content: space-between;
       background-color: #ffffff;
@@ -915,7 +932,7 @@ main {
         width: 159px;
         height: 29px;
         border-radius: 5px;
-        background-color: $blue-btn;
+        background-color: $dark-blue;
         color: $light-gray;
         font-family: $Pf_Din;
         font-size: 17px;

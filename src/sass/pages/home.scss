@@ -118,7 +118,6 @@ main {
   position: relative;
   overflow: hidden;
   border-radius: 13px;
-  transition: all 0.35s ease;
 
   &::before {
     display: block;
@@ -138,6 +137,26 @@ main {
     z-index: 1;
   }
 
+  &::after {
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 13px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(50, 69, 88, 0.36) 0%,
+      rgba(50, 69, 88, 0.49) 38%,
+      #324558 100%
+    );
+    border-radius: 13px;
+    z-index: 5;
+    opacity: 0;
+  }
+
   & .chif-img {
     @extend %img;
     border-radius: 13px;
@@ -150,26 +169,36 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
   }
 
   &:hover {
+    &::after {
+      opacity: 1;
+    }
+
     .chif-img {
       filter: blur(8px);
     }
 
     & .news-item_box {
       top: 0;
-      background-image: linear-gradient(
-        180deg,
-        rgba(50, 69, 88, 0.36) 0%,
-        rgba(50, 69, 88, 0.49) 38%,
-        #324558 100%
-      );
-      border-radius: 13px;
-      z-index: 5;
+      animation: blockHover 1s linear;
 
       & .news-item_text p {
+        display: block;
+      }
+    }
+
+    @keyframes blockHover {
+      0% {
+        top: 50%;
+        opacity: 0;
+      }
+
+      100% {
+        top: 0;
+        opacity: 1;
         display: block;
       }
     }
@@ -230,6 +259,7 @@ main {
   & p {
     margin: 0;
     display: none;
+    animation: blockHover 1s linear;
   }
 }
 

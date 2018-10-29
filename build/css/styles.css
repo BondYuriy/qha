@@ -6990,7 +6990,6 @@ main {
 	position: relative;
 	overflow: hidden;
 	border-radius: 13px;
-	transition: all 0.35s ease;
 }
 
 .news-item::before {
@@ -7006,6 +7005,21 @@ main {
 	z-index: 1;
 }
 
+.news-item::after {
+	display: block;
+	content: " ";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 13px;
+	background-image: linear-gradient(180deg, rgba(50, 69, 88, 0.36) 0%, rgba(50, 69, 88, 0.49) 38%, #324558 100%);
+	border-radius: 13px;
+	z-index: 5;
+	opacity: 0;
+}
+
 .news-item .chif-img {
 	border-radius: 13px;
 }
@@ -7017,7 +7031,11 @@ main {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 1;
+	z-index: 10;
+}
+
+.news-item:hover::after {
+	opacity: 1;
 }
 
 .news-item:hover .chif-img {
@@ -7027,9 +7045,8 @@ main {
 
 .news-item:hover .news-item_box {
 	top: 0;
-	background-image: linear-gradient(180deg, rgba(50, 69, 88, 0.36) 0%, rgba(50, 69, 88, 0.49) 38%, #324558 100%);
-	border-radius: 13px;
-	z-index: 5;
+	-webkit-animation: blockHover 1s linear;
+	animation: blockHover 1s linear;
 }
 
 .news-item:hover .news-item_box .news-item_text p {
@@ -7091,6 +7108,8 @@ main {
 .news-item_text p {
 	margin: 0;
 	display: none;
+	-webkit-animation: blockHover 1s linear;
+	animation: blockHover 1s linear;
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -11289,6 +11308,36 @@ from {
 to {
 	-webkit-transform: translateX(200%);
 	transform: translateX(200%);
+}
+
+}
+
+@-webkit-keyframes blockHover {
+
+0% {
+	top: 50%;
+	opacity: 0;
+}
+
+100% {
+	top: 0;
+	opacity: 1;
+	display: block;
+}
+
+}
+
+@keyframes blockHover {
+
+0% {
+	top: 50%;
+	opacity: 0;
+}
+
+100% {
+	top: 0;
+	opacity: 1;
+	display: block;
 }
 
 }

@@ -6688,7 +6688,7 @@ body.sticky-header .radio-header {
 }
 
 .radio-header .radio-header_menu {
-	display: none;
+	display: block;
 	width: 168px;
 	box-shadow: 0 2px 13px rgba(0, 0, 0, 0.09);
 	border-radius: 0px 0px 8px 8px;
@@ -6761,14 +6761,6 @@ body.sticky-header .radio-header {
 	content: "";
 	width: 17px;
 	height: 17px;
-}
-
-.radio-header:hover img {
-	box-shadow: 0 1px 12px rgba(75, 139, 192, 0.73);
-}
-
-.radio-header:hover .radio-header_menu {
-	display: block;
 }
 
 .footer-nav {

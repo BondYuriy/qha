@@ -6894,6 +6894,24 @@ main {
 	padding-top: 50px;
 }
 
+.title-news {
+	display: block;
+	color: #e6e6e6;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	margin-top: 10px;
+	line-height: 26px;
+}
+
+.title-news strong {
+	font-weight: 400;
+}
+
+.title-news:hover {
+	color: #e6e6e6;
+}
+
 .top-article {
 	position: relative;
 	overflow: hidden;
@@ -6921,7 +6939,7 @@ main {
 	filter: blur(8px);
 }
 
-.top-article_box {
+.top-article .top-article_box {
 	display: flex;
 	justify-content: space-between;
 	position: absolute;
@@ -6933,7 +6951,7 @@ main {
 	z-index: 2;
 }
 
-.top-article_box .date {
+.top-article .top-article_box .date {
 	flex: 0 0 5%;
 	height: 95px;
 	color: #aab9c8;
@@ -6944,19 +6962,21 @@ main {
 	text-align: center;
 	border-right: 1px solid #aab9c8;
 	padding: 8px 15px 0px 0px;
+	margin: auto 0px;
 }
 
-.top-article_box .date span span {
+.top-article .top-article_box .date span span {
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 33px;
 }
 
-.top-article_box .top-article_info {
+.top-article .top-article_box .top-article_info {
 	flex: 0 0 88%;
+	overflow: hidden;
 }
 
-.top-article_box .top-article_info p {
+.top-article .top-article_box .top-article_info p {
 	margin: 0;
 	font-family: "Open Sans", sans-serif;
 	font-size: 13px;
@@ -6965,25 +6985,14 @@ main {
 	font-size: 13px;
 	font-weight: 300;
 	font-style: italic;
-	padding-top: 10px;
+	padding-top: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.title-news {
-	display: block;
-	color: #e6e6e6;
-	font-family: "Pf Din Text Comp Pro", sans-serif;
-	font-size: 24px;
-	font-weight: 300;
-	margin-top: 10px;
-	line-height: 26px;
-}
-
-.title-news strong {
-	font-weight: 400;
-}
-
-.title-news:hover {
-	color: #e6e6e6;
+.top-article .top-article_box .top-article_info .title-news {
+	line-height: 24px;
 }
 
 .news-item {
@@ -10276,6 +10285,22 @@ main {
 
 .text-lg-center {
 	text-align: center !important;
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.nav_blue {
+	flex: 0 0 66%;
+}
+
+.radio-block .marquee-box .radio-btn {
+	flex: 0 0 15%;
+}
+
+.radio-block .marquee-box .marquee {
+	flex: 0 0 78%;
 }
 
 }

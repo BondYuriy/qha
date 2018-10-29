@@ -7045,8 +7045,16 @@ main {
 
 .news-item:hover .news-item_box {
 	top: 0;
-	-webkit-animation: blockHover 1s linear;
-	animation: blockHover 1s linear;
+	-webkit-animation: blockHover 1s ease-out;
+	animation: blockHover 1s ease-out;
+}
+
+.news-item:hover .news-item_box .news-item_info .date-1 {
+	margin-bottom: 10px;
+}
+
+.news-item:hover .news-item_box .news-item_text {
+	height: 50%;
 }
 
 .news-item:hover .news-item_box .news-item_text p {
@@ -7094,7 +7102,8 @@ main {
 	vertical-align: middle;
 }
 
-.news-item_text {
+.news-item_text,
+.news-item_text2 {
 	color: #fff;
 	font-family: "Open Sans", sans-serif;
 	font-size: 13px;
@@ -7105,7 +7114,8 @@ main {
 	overflow-y: scroll;
 }
 
-.news-item_text p {
+.news-item_text p,
+.news-item_text2 p {
 	margin: 0;
 	display: none;
 	-webkit-animation: blockHover 1s linear;
@@ -7138,6 +7148,14 @@ main {
 
 .box-50:hover .news-item_text {
 	flex: 0 0 43%;
+}
+
+.news-item_box:hover .news-item_text2 {
+	height: 100%;
+}
+
+.news-item_box:hover .news-item_text2 p {
+	display: block;
 }
 
 .sticker-partners {
@@ -7194,7 +7212,7 @@ main {
 
 .news_small_box {
 	height: 220px;
-	background-color: #ffffff;
+	background-color: #fff;
 	border-radius: 13px;
 	padding: 15px;
 	position: relative;
@@ -7227,32 +7245,6 @@ main {
 
 .news_small_box .small-box-info .title-news_gray strong {
 	font-weight: 500;
-}
-
-.news_small_box .news-item_text {
-	height: 30px;
-	color: #fff;
-	font-family: "Open Sans", sans-serif;
-	font-size: 13px;
-	line-height: 20px;
-	font-style: italic;
-	padding-top: 15px;
-	overflow-y: scroll;
-}
-
-.news_small_box .news-item_text p {
-	margin: 0;
-	display: none;
-}
-
-.news_small_box .scrollbar::-webkit-scrollbar {
-	width: 4px;
-	height: auto;
-}
-
-.news_small_box .scrollbar::-webkit-scrollbar-thumb {
-	border-radius: 3px;
-	background-color: #aab9c8;
 }
 
 .news_small_box .scrollbar {
@@ -7290,7 +7282,7 @@ main {
 
 .news_small_box:hover .news-item_text {
 	color: #5d6267;
-	height: auto;
+	height: 50%;
 }
 
 .news_small_box:hover .news-item_text p {

@@ -7665,7 +7665,7 @@ main {
 	height: 28px;
 	background-image: url("../img/quote.svg");
 	position: absolute;
-	left: 50%;
+	left: 48%;
 	top: 57%;
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -11196,6 +11196,55 @@ main {
 
 .podcust .podcust-news .date-1 span {
 	bottom: 0;
+}
+
+.news-rightbox {
+	margin-top: 35px;
+}
+
+.opinion .quotes .quotes-item .opinion-author {
+	width: 70px;
+	height: 70px;
+}
+
+.opinion .quotes .quotes-item .quotes-icon_box {
+	flex: 0 0 30%;
+}
+
+.opinion .quotes .quotes-item .quotes-info {
+	flex: 0 0 70%;
+}
+
+.radio-block .radio .radio-box {
+	flex: 0 0 25%;
+	min-height: 90px;
+}
+
+.radio-block .radio .radio-box:first-child {
+	flex: 0 0 20%;
+}
+
+.radio-block .radio .radio-box .radio-box_item1 {
+	padding: 0;
+}
+
+.radio-block .radio .radio-box .radio-box_item1 a::before {
+	display: inline-block;
+	content: "";
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/play.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+
+.radio-block .radio .radio-box .radio-box_item1 .icon-play {
+	display: none;
+}
+
+.radio-block .marquee-box .marquee {
+	flex: 0 0 72%;
 }
 
 }

@@ -355,5 +355,9 @@ body.sticky-header {
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav_blue {
     flex: 0 0 66%;
+
+    & .navbar-nav .nav-item .nav-link {
+      font-size: 18px;
+    }
   }
 }

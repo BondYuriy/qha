@@ -6894,6 +6894,10 @@ main {
 	padding-top: 50px;
 }
 
+.link-container {
+	display: inline-block;
+}
+
 .title-news {
 	display: block;
 	color: #e6e6e6;

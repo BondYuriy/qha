@@ -325,6 +325,7 @@ body.sticky-header {
             font-size: 14px;
             font-weight: 400;
             line-height: 16px;
+            text-decoration: none;
           }
         }
       }
@@ -341,6 +342,11 @@ body.sticky-header {
         width: 17px;
         height: 17px;
         // background-image: url("../../img/speaker.svg");
+      }
+
+      &:hover {
+        opacity: 0.8;
+        color: #fff;
       }
     }
   }

@@ -6385,11 +6385,6 @@ a {
 	text-transform: uppercase;
 }
 
-.btn:hover {
-	opacity: 0.8;
-	color: #fff;
-}
-
 .btn-red {
 	background-color: #c63c3c;
 }
@@ -6748,6 +6743,7 @@ body.sticky-header .radio-header {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
+	text-decoration: none;
 }
 
 .radio-header .radio-header_menu .btn {
@@ -6761,6 +6757,11 @@ body.sticky-header .radio-header {
 	content: "";
 	width: 17px;
 	height: 17px;
+}
+
+.radio-header .radio-header_menu .btn:hover {
+	opacity: 0.8;
+	color: #fff;
 }
 
 .footer-nav {
@@ -6895,7 +6896,11 @@ main {
 }
 
 .link-container {
-	display: inline-block;
+	display: block;
+}
+
+.link-container:hover {
+	text-decoration: none;
 }
 
 .title-news {
@@ -6910,10 +6915,6 @@ main {
 
 .title-news strong {
 	font-weight: 400;
-}
-
-.title-news:hover {
-	color: #e6e6e6;
 }
 
 .top-article {
@@ -7516,10 +7517,15 @@ main {
 	font-size: 20px;
 	font-weight: 400;
 	margin: 5px 0px;
+	text-decoration: none;
 }
 
 .best-news .best-news_container .best-news_box .best-news_item .news-info .title-news strong {
 	font-weight: 500;
+}
+
+.best-news .best-news_container .best-news_box .best-news_item .news-info .title-news:hover {
+	color: #fff;
 }
 
 .best-news .best-news_container .best-news_box .best-news_item .news-info .date-1 {
@@ -7571,6 +7577,7 @@ main {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 22px;
+	text-decoration: none;
 }
 
 .news-rightbox .news-rightbox_item .news-rightbox_box .title-news strong,
@@ -7757,6 +7764,7 @@ main {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
+	text-decoration: none;
 }
 
 .radio-block .radio .radio-box .radio-box_item2 .date-1 {
@@ -7765,7 +7773,7 @@ main {
 	left: 0;
 }
 
-.radio-block .radio .radio-box .radio-box_item2 a {
+.radio-block .radio .radio-box .radio-box_item2 .radio-box_sticker {
 	display: inline-block;
 	width: 51px;
 	height: 16px;
@@ -7782,11 +7790,6 @@ main {
 	position: absolute;
 	bottom: 5px;
 	right: 0;
-}
-
-.radio-block .radio .radio-box .radio-box_item2 a:hover {
-	opacity: 0.8;
-	color: #fff;
 }
 
 .radio-block .marquee-box {
@@ -7852,6 +7855,7 @@ main {
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 20px;
 	font-weight: 400;
+	text-decoration: none;
 	margin-right: 43px;
 }
 

@@ -23,3 +23,11 @@
 .btn-brown {
   background-color: $dark-brown;
 }
+
+@media (max-width: 991px) {
+  .btn {
+    width: 90px;
+    height: 21px;
+    font-size: 16px;
+  }
+}

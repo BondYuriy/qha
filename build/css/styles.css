@@ -7188,7 +7188,6 @@ main {
 }
 
 .news_line_noback {
-	height: 157px;
 	background-color: #ffffff;
 	border-radius: 13px;
 	padding: 15px;
@@ -11125,6 +11124,78 @@ main {
 .navbar-expand-lg > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 991px) {
+
+.btn {
+	width: 90px;
+	height: 21px;
+	font-size: 16px;
+}
+
+.top-article .top-article_box .date {
+	padding: 0px 10px 0px 0px;
+	height: 70px;
+}
+
+.top-article .top-article_box .date span span {
+	font-size: 30px;
+	line-height: 24px;
+}
+
+.top-article .top-article_box .top-article_info .title-news {
+	margin: 0;
+	font-size: 20px;
+}
+
+.top-article .top-article_box .top-article_info p {
+	display: none;
+}
+
+.news-item_text,
+.news-item_text2 {
+	padding: 0;
+}
+
+.title-news {
+	font-size: 20px;
+	line-height: 22px;
+	margin-top: 3px;
+}
+
+.news-item .news-item_box {
+	padding: 10px;
+}
+
+.news_line_noback .line-noback-info .title-news_gray {
+	font-size: 20px;
+	line-height: 22px;
+}
+
+.news_small_box {
+	padding: 8px;
+}
+
+.news_small_box .small-box-info .title-news_gray {
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 3px;
+}
+
+.podcust .podcust-news {
+	padding: 10px;
+}
+
+.podcust .podcust-news .title-news_gray {
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.podcust .podcust-news .date-1 span {
+	bottom: 0;
 }
 
 }

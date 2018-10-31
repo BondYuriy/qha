@@ -329,6 +329,16 @@ body.sticky-header {
   }
 }
 
+@media (max-width: 767px) {
+  .social {
+    display: none;
+  }
+
+  .nav_blue {
+    flex: 0 0 25%;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar ul {
     & li {
@@ -385,8 +395,6 @@ body.sticky-header {
     border-bottom: $dark-blue solid 3px;
   }
 }
-
-
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav_blue {

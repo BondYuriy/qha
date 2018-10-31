@@ -1046,6 +1046,80 @@ main {
   }
 }
 
+@media (max-width: 575px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
+  .news_small_box {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .opinion .quotes {
+    flex-direction: column;
+
+    & .quotes-item {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & .opinion-author {
+        width: 100px;
+        height: 100px;
+      }
+
+      & .quotes-icon_box .quotes-icon {
+        top: 90%;
+      }
+    }
+  }
+
+  .radio-block {
+    width: 85%;
+    margin: auto;
+
+    & .marquee-box {
+      justify-content: center;
+
+      & .marquee {
+        display: none;
+      }
+    }
+
+    & .radio {
+      flex-direction: column;
+
+      & .radio-box {
+        height: auto;
+        padding: 15px;
+
+        & .radio-box_item1 a {
+          font-size: 18px;
+        }
+
+        & .radio-box_item2 {
+          & .date-1 {
+            left: 15px;
+          }
+
+          & .radio-box_sticker {
+            right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .mb-sm-25 {
+    margin-bottom: 25px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .best-news {
     & .best-news_container {
@@ -1208,7 +1282,12 @@ main {
     line-height: 22px;
   }
 
-  .best-news .best-news_container .best-news_box .best-news_item .news-info .title-news {
+  .best-news
+  .best-news_container
+  .best-news_box
+  .best-news_item
+  .news-info
+  .title-news {
     font-size: 19px;
     line-height: 22px;
   }

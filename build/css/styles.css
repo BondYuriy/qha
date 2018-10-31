@@ -11328,6 +11328,99 @@ main {
 
 }
 
+@media (max-width: 767px) {
+
+.social {
+	display: none;
+}
+
+.nav_blue {
+	flex: 0 0 25%;
+}
+
+.nav_gray ul {
+	flex-wrap: wrap;
+}
+
+.footer-box {
+	justify-content: space-evenly;
+}
+
+.copyright {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.mb-sm-35 {
+	margin-bottom: 35px;
+}
+
+.news_small_box {
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.opinion .quotes {
+	flex-direction: column;
+}
+
+.opinion .quotes .quotes-item {
+	margin-bottom: 50px;
+}
+
+.opinion .quotes .quotes-item:last-child {
+	margin-bottom: 0;
+}
+
+.opinion .quotes .quotes-item .opinion-author {
+	width: 100px;
+	height: 100px;
+}
+
+.opinion .quotes .quotes-item .quotes-icon_box .quotes-icon {
+	top: 90%;
+}
+
+.radio-block {
+	width: 85%;
+	margin: auto;
+}
+
+.radio-block .marquee-box {
+	justify-content: center;
+}
+
+.radio-block .marquee-box .marquee {
+	display: none;
+}
+
+.radio-block .radio {
+	flex-direction: column;
+}
+
+.radio-block .radio .radio-box {
+	height: auto;
+	padding: 15px;
+}
+
+.radio-block .radio .radio-box .radio-box_item1 a {
+	font-size: 18px;
+}
+
+.radio-block .radio .radio-box .radio-box_item2 .date-1 {
+	left: 15px;
+}
+
+.radio-block .radio .radio-box .radio-box_item2 .radio-box_sticker {
+	right: 15px;
+}
+
+.mb-sm-25 {
+	margin-bottom: 25px;
+}
+
+}
+
 @media (max-width: 575.98px) {
 
 .table-responsive-sm {

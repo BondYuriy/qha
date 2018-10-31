@@ -117,5 +117,21 @@
   margin-top: 30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
+  .nav_gray ul {
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    justify-content: space-evenly;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .mb-sm-35 {
+    margin-bottom: 35px;
+  }
 }

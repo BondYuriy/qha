@@ -7453,7 +7453,11 @@ main {
 	flex-wrap: wrap;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item {
+.best-news .best-news_container .best-news_box .best-news_list {
+	flex: 0 0 50%;
+}
+
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item {
 	flex: 0 0 48%;
 	height: 108px;
 	display: flex;
@@ -7461,11 +7465,11 @@ main {
 	margin-bottom: 45px;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item:nth-last-child(-n + 2) {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item:last-child {
 	margin-bottom: 0;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-num {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-num {
 	flex: 0 0 16%;
 	height: 108px;
 	border-radius: 8px;
@@ -7473,7 +7477,7 @@ main {
 	text-align: center;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-num span {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-num span {
 	color: #fff;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 48px;
@@ -7481,13 +7485,13 @@ main {
 	line-height: 108px;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-info {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-info {
 	flex: 0 0 80%;
 	position: relative;
 	padding-bottom: 28px;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-info .title-news {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-info .title-news {
 	color: #e6e6e6;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 20px;
@@ -7496,15 +7500,15 @@ main {
 	text-decoration: none;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-info .title-news strong {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-info .title-news strong {
 	font-weight: 500;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-info .title-news:hover {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-info .title-news:hover {
 	color: #fff;
 }
 
-.best-news .best-news_container .best-news_box .best-news_item .news-info .date-1 {
+.best-news .best-news_container .best-news_box .best-news_list .best-news_item .news-info .date-1 {
 	position: absolute;
 	bottom: 0;
 }
@@ -11355,9 +11359,52 @@ main {
 	margin-bottom: 35px;
 }
 
+.top-article {
+	min-height: 140px;
+}
+
+.top-article::before {
+	z-index: 1;
+}
+
+.top-article img {
+	width: auto;
+	height: 100%;
+}
+
+.top-article .top-article_box {
+	padding: 10px;
+	z-index: 10;
+}
+
+.top-article .top-article_box .top-article_info {
+	padding-left: 10px;
+}
+
 .news_small_box {
 	height: auto;
 	padding-bottom: 50px;
+}
+
+.best-news {
+	min-height: 1030px;
+}
+
+.best-news img {
+	width: auto;
+	height: 100%;
+}
+
+.best-news .best-news_container .best-news_box {
+	flex-direction: column;
+}
+
+.best-news .best-news_container .best-news_box .best-news_list {
+	margin-bottom: 40px;
+}
+
+.best-news .best-news_container .best-news_box .best-news_list:last-child {
+	margin-bottom: 0;
 }
 
 .opinion .quotes {

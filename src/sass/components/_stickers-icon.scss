@@ -1,0 +1,51 @@
+.sticker-partners {
+  display: inline-block;
+  width: 128px;
+  height: 23px;
+  color: #aab9c8;
+  font-family: $Pf_Din;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 1px solid #aab9c8;
+  text-align: center;
+  line-height: 23px;
+  vertical-align: middle;
+}
+
+.small-icon_youtube::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 15px;
+  background-image: url("../img/youtube-play-button.svg");
+  margin-right: 10px;
+}
+
+.small-icon_photo::before {
+  display: inline-block;
+  content: "";
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/photo-camera.svg");
+  margin-right: 10px;
+}
+
+.icon-box {
+  width: 56px;
+  height: 46px;
+  border-radius: 13px 0 8px;
+  background-color: rgba(35, 96, 146, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding-top: 12px;
+
+  & img {
+    display: block;
+    width: 24px;
+    height: 22px;
+    margin: auto;
+  }
+}

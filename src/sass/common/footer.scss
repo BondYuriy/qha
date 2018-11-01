@@ -78,22 +78,6 @@
       }
     }
   }
-
-  & .social-footer {
-    & ul {
-      display: flex;
-
-      & li {
-        width: 26px;
-        height: 26px;
-        margin-right: 10px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-  }
 }
 
 .copyright {
@@ -111,10 +95,6 @@
       }
     }
   }
-}
-
-.mt-30 {
-  margin-top: 30px;
 }
 
 @media (max-width: 575px) {

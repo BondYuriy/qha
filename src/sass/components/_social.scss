@@ -1,0 +1,39 @@
+.social {
+  & ul {
+    display: flex;
+
+    & li {
+      width: 44px;
+      height: 43px;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  & svg {
+    fill: $blue;
+
+    &:hover {
+      fill: $dark-blue;
+    }
+  }
+}
+
+.social-footer {
+  & ul {
+    display: flex;
+
+    & li {
+      width: 26px;
+      height: 26px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

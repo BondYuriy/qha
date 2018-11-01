@@ -1,0 +1,31 @@
+.news_line_noback {
+  background-color: #ffffff;
+  border-radius: 13px;
+  padding: 15px;
+
+  & .line-noback-info {
+    display: flex;
+    flex-direction: column;
+
+    & .title-news_gray {
+      color: #5d6267;
+      font-family: $Pf_Din;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      margin-top: 10px;
+
+      & strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  & .scrollbar {
+    padding: 0;
+  }
+
+  & .date-1 {
+    margin-top: 10px;
+  }
+}

@@ -17,30 +17,6 @@
   padding: 40px 0px;
 }
 
-.social {
-  & ul {
-    display: flex;
-
-    & li {
-      width: 44px;
-      height: 43px;
-      margin-right: 8px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  & svg {
-    fill: $blue;
-
-    &:hover {
-      fill: $dark-blue;
-    }
-  }
-}
-
 .logo {
   justify-self: center;
   display: block;

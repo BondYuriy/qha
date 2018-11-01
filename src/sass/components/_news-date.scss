@@ -1,0 +1,21 @@
+.date-1 {
+  display: inline-block;
+  position: relative;
+
+  & span {
+    color: $blue;
+    font-family: $Pf_Din;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 19px;
+      height: 20px;
+      background-image: url("../img/calendar.svg");
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

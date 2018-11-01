@@ -17,24 +17,52 @@ a {
   position: relative;
 }
 
+.link-container {
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .hidden {
   display: none;
 }
 
-.small-icon_youtube::before {
-  display: inline-block;
-  content: "";
-  width: 22px;
-  height: 15px;
-  background-image: url("../img/youtube-play-button.svg");
-  margin-right: 10px;
+.title-news {
+  display: block;
+  color: $light-gray;
+  font-family: $Pf_Din;
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 10px;
+  line-height: 26px;
+
+  & strong {
+    font-weight: 400;
+  }
 }
 
-.small-icon_photo::before {
-  display: inline-block;
-  content: "";
-  width: 22px;
-  height: 20px;
-  background-image: url("../img/photo-camera.svg");
-  margin-right: 10px;
+.title-news_gray {
+  display: block;
+  color: #5d6267;
+  font-family: $Pf_Din;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 10px;
+
+  & strong {
+    font-weight: 500;
+  }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: auto;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #aab9c8;
 }

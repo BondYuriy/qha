@@ -6398,7 +6398,7 @@ a {
 }
 
 .header {
-	min-height: 45px;
+	min-height: 50px;
 	position: relative;
 	position: fixed;
 	left: 0;
@@ -11187,8 +11187,8 @@ main {
 
 .navbar {
 	position: absolute;
-	top: -70px;
-	right: 0;
+	top: -75px;
+	right: 15px;
 }
 
 .navbar ul li {
@@ -11212,20 +11212,60 @@ main {
 }
 
 .navbar-toggler {
+	border: 0;
+	padding: 0px 8px;
+	width: 40px;
+	height: 38px;
 	position: absolute;
 	top: -8px;
 	right: 0;
 	outline: none !important;
 	z-index: 25;
+	background-color: #aab9c8;
 }
 
-.navbar-toggler-icon {
-	border: 0;
-	height: 3px;
-	width: 30px;
-	background: #236092;
+.navbar-toggler span,
+.navbar-toggler span:before,
+.navbar-toggler span:after {
+	background: #fff;
 	display: block;
-	margin: 5px 0;
+	height: 3px;
+	position: relative;
+	top: 0;
+	width: 24px;
+	transition: all 0.25s ease;
+}
+
+.navbar-toggler span:before,
+.navbar-toggler span:after {
+	content: "";
+	position: absolute;
+}
+
+.navbar-toggler span:before {
+	top: -8px;
+}
+
+.navbar-toggler span:after {
+	top: 8px;
+}
+
+.open span {
+	background: transparent;
+}
+
+.open span:before {
+	-webkit-transform: translateX(16%) rotate(45deg);
+	transform: translateX(16%) rotate(45deg);
+	-webkit-transform-origin: top left;
+	transform-origin: top left;
+}
+
+.open span:after {
+	-webkit-transform: translateX(16%) rotate(-45deg);
+	transform: translateX(16%) rotate(-45deg);
+	-webkit-transform-origin: bottom left;
+	transform-origin: bottom left;
 }
 
 .navbar-collapse {
@@ -11234,7 +11274,7 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(170, 185, 200, 0.9);
+	background-color: rgba(255, 255, 255, 0.97);
 	z-index: 20;
 	padding: 15%;
 	transition: 0s;
@@ -11381,6 +11421,19 @@ body.sticky-header .navbar {
 
 @media (max-width: 767px) {
 
+.header-main {
+	padding: 20px 0px;
+}
+
+.header-main .logo {
+	width: 200px;
+	height: 32px;
+}
+
+.navbar {
+	top: -50px;
+}
+
 .social {
 	display: none;
 }
@@ -11404,6 +11457,10 @@ body.sticky-header .navbar {
 
 .mb-sm-35 {
 	margin-bottom: 35px;
+}
+
+main {
+	padding: 150px 0px 65px 0px;
 }
 
 .top-article {
@@ -11533,14 +11590,6 @@ body.sticky-header .navbar {
 .navbar-expand-sm > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
-}
-
-}
-
-@media (max-width: 575px) {
-
-.navbar {
-	top: -80px;
 }
 
 }

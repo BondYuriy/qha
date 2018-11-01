@@ -9,3 +9,10 @@ $(function() {
   }); //win func.
 }); //ready func.
 
+//============ menu btn ==============
+
+$('.navbar-toggler').click(function(){
+  $(this).toggleClass('open');
+});
+
+//====================================

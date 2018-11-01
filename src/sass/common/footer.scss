@@ -117,6 +117,28 @@
   margin-top: 30px;
 }
 
+@media (max-width: 575px) {
+  .footer-nav .footer-nav_list a {
+    font-size: 18px;
+  }
+
+  .footer-main .nav_gray {
+    margin-bottom: 40px;
+
+    & ul {
+      justify-content: space-around;
+    }
+  }
+
+  .copyright span {
+    font-size: 18px;
+  }
+
+  .mb-sm-35 {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .nav_gray ul {
     flex-wrap: wrap;

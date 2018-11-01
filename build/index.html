@@ -48,14 +48,14 @@
                   </a>
                 </div>
                 <div class="search">
-                  <form action="#">
+                  <!-- <form action="#">
                     <input class="search_input" type="text" placeholder="Что желаете найти?">
                     <div>
                       <svg width="44" height="43">
-                        <use href="img/svg-sprite.svg#icon-search1"></use>
+                        <use href="img/svg-sprite.svg#icon-search1" />
                       </svg>
                     </div>
-                  </form>
+                  </form> -->
                 </div>
               </div>
             </div>
@@ -100,6 +100,18 @@
                       <a class="nav-link" href="#">подкасты</a>
                     </li>
                   </ul>
+                  <form class="navbar-form" role="search">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Что желаете найти?">
+                      <span class="input-group-btn">
+                        <button type="submit" class="submit_but btn btn-default">
+                          <svg>
+                            <use href="img/search.svg#icon-search"></use>
+                          </svg>
+                        </button>
+                      </span>
+                    </div>
+                  </form>
                 </div>
               </nav>
               <div class="radio-header">

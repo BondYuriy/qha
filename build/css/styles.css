@@ -6398,6 +6398,7 @@ a {
 }
 
 .header {
+	min-height: 45px;
 	position: relative;
 	position: fixed;
 	left: 0;
@@ -6451,53 +6452,6 @@ a {
 	height: auto;
 }
 
-.search input {
-	border: 0;
-	display: none;
-	width: 70%;
-	height: 40px;
-	border-bottom: #fff solid 1px;
-	position: absolute;
-	left: 50%;
-	top: 59%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	background-color: rgba(0, 0, 0, 0);
-}
-
-.search input::-webkit-input-placeholder {
-	color: #fff;
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-}
-
-.search input::-ms-input-placeholder {
-	color: #fff;
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-}
-
-.search input::placeholder {
-	color: #fff;
-	text-align: center;
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-}
-
-.search div {
-	display: block;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	z-index: 100;
-}
-
-.search div svg {
-	fill: #aab9c8;
-}
-
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -6538,8 +6492,75 @@ a {
 	text-decoration: none;
 }
 
+.navbar .navbar-form,
+.nav_list .navbar-form {
+	position: relative;
+	top: -90px;
+	right: -250px;
+}
+
+.navbar .navbar-form .input-group input,
+.nav_list .navbar-form .input-group input {
+	border: 0;
+	display: none;
+	width: 70%;
+	height: 40px;
+	border-bottom: #fff solid 1px;
+	position: absolute;
+	left: 50%;
+	top: 59%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar .navbar-form .input-group input::-webkit-input-placeholder,
+.nav_list .navbar-form .input-group input::-webkit-input-placeholder {
+	color: #fff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+.navbar .navbar-form .input-group input::-ms-input-placeholder,
+.nav_list .navbar-form .input-group input::-ms-input-placeholder {
+	color: #fff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+.navbar .navbar-form .input-group input::placeholder,
+.nav_list .navbar-form .input-group input::placeholder {
+	color: #fff;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+}
+
+.navbar .navbar-form .input-group .input-group-btn,
+.nav_list .navbar-form .input-group .input-group-btn {
+	display: block;
+	z-index: 100;
+}
+
+.navbar .navbar-form .input-group .input-group-btn .submit_but,
+.nav_list .navbar-form .input-group .input-group-btn .submit_but {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #aab9c8;
+}
+
+.navbar .navbar-form .input-group .input-group-btn .submit_but svg,
+.nav_list .navbar-form .input-group .input-group-btn .submit_but svg {
+	width: 22px;
+	height: 22px;
+	fill: #fff;
+}
+
 .nav_blue {
-	flex: 0 0 55%;
+	flex: 0 0 60%;
 }
 
 .nav_blue .navbar-nav li a {
@@ -6609,15 +6630,19 @@ body.sticky-header .navbar ul li {
 	padding: 0;
 }
 
-body.sticky-header .search {
-	position: absolute;
-	right: 15px;
-	top: 5px;
+body.sticky-header .navbar-form {
+	right: -70px;
+	top: -7px;
 }
 
-body.sticky-header .search svg {
+body.sticky-header .navbar-form .input-group .input-group-btn .submit_but {
 	width: 34px;
 	height: 34px;
+}
+
+body.sticky-header .navbar-form .input-group .input-group-btn .submit_but svg {
+	width: 18px;
+	height: 18px;
 }
 
 body.sticky-header .radio-header {
@@ -10318,6 +10343,10 @@ main {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+.navbar .navbar-form {
+	right: -180px;
+}
+
 .nav_blue {
 	flex: 0 0 66%;
 }
@@ -11156,6 +11185,12 @@ main {
 	font-size: 16px;
 }
 
+.navbar {
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
+
 .navbar ul li {
 	border: 0;
 }
@@ -11166,6 +11201,14 @@ main {
 
 .navbar ul li.active {
 	border: 0;
+}
+
+.navbar .navbar-form .input-group .input-group-btn .submit_but {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar .navbar-form .input-group .input-group-btn .submit_but svg {
+	fill: #236092;
 }
 
 .navbar-toggler {
@@ -11195,6 +11238,10 @@ main {
 	z-index: 20;
 	padding: 15%;
 	transition: 0s;
+}
+
+body.sticky-header .navbar {
+	top: 0;
 }
 
 .top-article .top-article_box .date {
@@ -11486,6 +11533,14 @@ main {
 .navbar-expand-sm > .container-fluid {
 	padding-right: 0;
 	padding-left: 0;
+}
+
+}
+
+@media (max-width: 575px) {
+
+.navbar {
+	top: -80px;
 }
 
 }

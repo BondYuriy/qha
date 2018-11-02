@@ -6293,7 +6293,8 @@ a.text-dark:focus {
 
 /* Reset */
 
-ul {
+ul,
+.breadcrumb {
 	margin: 0;
 	padding: 0;
 }
@@ -6327,6 +6328,10 @@ ul {
 
 .mb-35 {
 	margin-bottom: 35px;
+}
+
+.mb-70 {
+	margin-bottom: 70px;
 }
 
 /*------- margin-left ---------*/
@@ -6559,7 +6564,7 @@ a {
 	position: absolute;
 	left: 0;
 	right: 0;
-	top: 30%;
+	top: 50%;
 	bottom: 0;
 	border-radius: 0 0 13px 13px;
 	background-image: linear-gradient(180deg, rgba(170, 185, 200, 0) 0%, rgba(107, 124, 142, 0.48) 38%, rgba(50, 69, 88, 0.92) 100%);
@@ -7780,7 +7785,145 @@ main {
 }
 
 .main-news {
-	padding: 217px 0px 65px 0px;
+	padding: 217px 0px 100px 0px;
+}
+
+.breadcrumbs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-options {
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	margin-right: 15px;
+}
+
+.breadcrumb-position .rubric {
+	color: #236092;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 28px;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.breadcrumb {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.breadcrumb ul {
+	display: flex;
+}
+
+.breadcrumb ul li {
+	margin-right: 10px;
+}
+
+.breadcrumb ul li:last-child {
+	margin-right: 0;
+}
+
+.breadcrumb ul li::before {
+	display: inline-block;
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #aab9c8;
+	margin-right: 5px;
+}
+
+.breadcrumb ul li a {
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.breadcrumb ul li span {
+	color: #236092;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.display a {
+	display: inline-block;
+	padding: 0px 10px;
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-right: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.display a:last-child {
+	margin-right: 0;
+}
+
+.display .active {
+	color: #236092;
+	border-radius: 5px;
+	border: 1px solid #236092;
+}
+
+.pagination {
+	display: flex;
+	flex-direction: column;
+	width: 204px;
+	margin: auto;
+}
+
+.pagination .pagination-btn {
+	display: block;
+	width: 203px;
+	height: 49px;
+	border-radius: 6px;
+	background-image: linear-gradient(180deg, #3b83a8 0%, #236092 100%);
+	color: #fff;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 49px;
+	margin-bottom: 20px;
+}
+
+.pagination ul {
+	display: flex;
+	padding: 7px 25px;
+	border-radius: 5px;
+	background-color: rgba(170, 185, 200, 0.19);
+}
+
+.pagination ul li a {
+	display: inline-block;
+	padding: 3px 15px;
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.pagination ul .active {
+	border-radius: 5px;
+	background-image: linear-gradient(180deg, #3b83a8 0%, #236092 100%);
+}
+
+.pagination ul .active a {
+	color: #fff;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -10250,6 +10393,8 @@ main {
 
 .news-item:hover .news-item_box .news-item_text p {
 	display: block;
+	-webkit-animation: blockHover 1s ease-out;
+	animation: blockHover 1s ease-out;
 }
 
 .box-50:hover {
@@ -11576,6 +11721,10 @@ main {
 	margin-bottom: 25px;
 }
 
+.main-news {
+	padding: 150px 0px 65px 0px;
+}
+
 }
 
 @media (max-width: 575.98px) {
@@ -11843,6 +11992,36 @@ to {
 
 100% {
 	opacity: 0;
+}
+
+}
+
+@-webkit-keyframes blockHover {
+
+0% {
+	top: 50%;
+	opacity: 0;
+}
+
+100% {
+	top: 0;
+	opacity: 1;
+	display: block;
+}
+
+}
+
+@keyframes blockHover {
+
+0% {
+	top: 50%;
+	opacity: 0;
+}
+
+100% {
+	top: 0;
+	opacity: 1;
+	display: block;
 }
 
 }

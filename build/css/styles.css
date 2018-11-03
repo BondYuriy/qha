@@ -6442,25 +6442,30 @@ a {
 	background-color: #906b2a;
 }
 
-.social ul {
+.social ul,
+.social2 ul {
 	display: flex;
 }
 
-.social ul li {
+.social ul li,
+.social2 ul li {
 	width: 44px;
 	height: 43px;
 	margin-right: 8px;
 }
 
-.social ul li:last-child {
+.social ul li:last-child,
+.social2 ul li:last-child {
 	margin-right: 0;
 }
 
-.social svg {
+.social svg,
+.social2 svg {
 	fill: #aab9c8;
 }
 
-.social svg:hover {
+.social svg:hover,
+.social2 svg:hover {
 	fill: #236092;
 }
 
@@ -7933,6 +7938,218 @@ main {
 
 .pagination ul .active a {
 	color: #fff;
+}
+
+.main-newsbig {
+	padding: 217px 0px 100px 0px;
+}
+
+.wrapper-bignews {
+	border-radius: 17px;
+	background-color: #fff;
+	padding: 15px 15px 15px 58px;
+}
+
+.chif-news_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 60px 0px 0px 0px;
+}
+
+.chif-news_box .btn {
+	margin-bottom: 44px;
+}
+
+.chif-news_box .breadcrumb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.chif-news_box .breadcrumb span {
+	margin: 0;
+}
+
+.chif-news_box h1 {
+	margin: 0;
+	color: #000000;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.chif-news_box h1 strong {
+	font-weight: 500;
+}
+
+.chif-news_box .date-1 {
+	margin-bottom: 50px;
+}
+
+.news-foto_container {
+	height: 485px;
+	background-color: #aab9c8;
+	border-radius: 13px;
+	position: relative;
+}
+
+.news-foto_container::before {
+	display: block;
+	content: " ";
+	border-radius: 13px 13px 0px 0px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 50%;
+	background-image: linear-gradient(0deg, rgba(170, 185, 200, 0) 0%, rgba(107, 124, 142, 0.48) 38%, rgba(50, 69, 88, 0.92) 100%);
+	z-index: 1;
+}
+
+.news-foto_container .btn-close_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	right: 18px;
+	top: 18px;
+	z-index: 5;
+}
+
+.news-foto_container .btn-close_box .btn-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.5);
+	background-color: #c63c3c;
+}
+
+.news-foto_container .btn-close_box .btn-close img {
+	width: 18px;
+	height: 18px;
+}
+
+.news-foto_container .btn-close_box span {
+	color: #aab9c8;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.sidebar-newsbig {
+	display: flex;
+	flex-direction: column;
+}
+
+.aricle-author-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 45%;
+	padding-top: 45%;
+}
+
+.aricle-author-box .aricle-author {
+	position: relative;
+	width: 94px;
+	height: 94px;
+	background-color: #ffffff;
+	box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.11);
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.aricle-author-box .aricle-author img {
+	display: block;
+	width: 87%;
+	height: auto;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.aricle-author-box .author-name {
+	color: #5d6267;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 24px;
+}
+
+.aricle-author-box .authore-info {
+	color: #236092;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.aricle-author-box::after {
+	display: block;
+	content: "";
+	width: 30px;
+	height: 28px;
+	background-image: url("../img/quote.svg");
+	margin-top: 20px;
+}
+
+.subtitle {
+	color: #236092;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 45px;
+	text-transform: uppercase;
+	text-align: center;
+	border-top: #236092 solid 9px;
+	padding: 20px 40px;
+}
+
+.article p {
+	color: #000000;
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.article p strong {
+	font-weight: 700;
+}
+
+.article-quote {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-quote span {
+	flex: 0 0 30%;
+	color: #5d6267;
+	font-family: "Pf Din Text Comp Pro", sans-serif;
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 24px;
+}
+
+.article-quote p {
+	flex: 0 0 65%;
+	color: #5d6267;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: italic;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

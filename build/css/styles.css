@@ -11739,6 +11739,15 @@ main {
 	padding: 150px 0px 65px 0px;
 }
 
+.breadcrumbs {
+	flex-direction: row;
+	align-items: center;
+}
+
+.display {
+	display: none;
+}
+
 }
 
 @media (max-width: 575.98px) {
@@ -11833,10 +11842,6 @@ main {
 }
 
 .breadcrumbs {
-	display: none;
-}
-
-.display {
 	display: none;
 }
 

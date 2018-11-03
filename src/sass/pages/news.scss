@@ -5,6 +5,7 @@
 .breadcrumbs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title-options {
@@ -13,6 +14,7 @@
   font-size: 15px;
   font-weight: 400;
   margin-right: 15px;
+  vertical-align: middle;
 }
 
 .breadcrumb-position {
@@ -21,7 +23,6 @@
     font-family: $Pf_Din;
     font-size: 30px;
     font-weight: 400;
-    line-height: 28px;
     text-transform: uppercase;
     vertical-align: middle;
   }
@@ -33,9 +34,11 @@
 
   & ul {
     display: flex;
+    align-items: center;
 
     & li {
       margin-right: 10px;
+
 
       &:last-child {
         margin-right: 0;
@@ -52,18 +55,24 @@
       }
 
       & a {
+        display: inline-block;
+        height: 26px;
         color: $blue;
         font-family: $Pf_Din;
         font-size: 15px;
         font-weight: 400;
         text-decoration: none;
+        vertical-align: middle;
       }
 
       & span {
+        display: inline-block;
+        height: 26px;
         color: $dark-blue;
         font-family: $Pf_Din;
         font-size: 15px;
         font-weight: 400;
+        vertical-align: middle;
       }
     }
   }
@@ -72,12 +81,13 @@
 .display {
   & a {
     display: inline-block;
+    height: 23px;
     padding: 0px 10px;
     color: $blue;
     font-family: $Pf_Din;
     font-size: 18px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 23px;
     margin-right: 15px;
     text-transform: uppercase;
     text-decoration: none;
@@ -130,8 +140,8 @@
         font-family: $Pf_Din;
         font-size: 18px;
         font-weight: 700;
-        text-align: center;
         line-height: 24px;
+        text-align: center;
         text-decoration: none;
       }
     }
@@ -147,8 +157,29 @@
   }
 }
 
+@media (max-width: 575px) {
+  .main-news {
+    padding: 115px 0px 65px 0px;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .display {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .main-news {
     padding: 150px 0px 65px 0px;
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumbs {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

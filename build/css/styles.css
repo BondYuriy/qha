@@ -7791,6 +7791,7 @@ main {
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .title-options {
@@ -7799,6 +7800,7 @@ main {
 	font-size: 15px;
 	font-weight: 400;
 	margin-right: 15px;
+	vertical-align: middle;
 }
 
 .breadcrumb-position .rubric {
@@ -7806,7 +7808,6 @@ main {
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 30px;
 	font-weight: 400;
-	line-height: 28px;
 	text-transform: uppercase;
 	vertical-align: middle;
 }
@@ -7817,6 +7818,7 @@ main {
 
 .breadcrumb ul {
 	display: flex;
+	align-items: center;
 }
 
 .breadcrumb ul li {
@@ -7838,28 +7840,35 @@ main {
 }
 
 .breadcrumb ul li a {
+	display: inline-block;
+	height: 26px;
 	color: #aab9c8;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	text-decoration: none;
+	vertical-align: middle;
 }
 
 .breadcrumb ul li span {
+	display: inline-block;
+	height: 26px;
 	color: #236092;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 15px;
 	font-weight: 400;
+	vertical-align: middle;
 }
 
 .display a {
 	display: inline-block;
+	height: 23px;
 	padding: 0px 10px;
 	color: #aab9c8;
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 22px;
+	line-height: 23px;
 	margin-right: 15px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -7912,8 +7921,8 @@ main {
 	font-family: "Pf Din Text Comp Pro", sans-serif;
 	font-size: 18px;
 	font-weight: 700;
-	text-align: center;
 	line-height: 24px;
+	text-align: center;
 	text-decoration: none;
 }
 
@@ -11546,6 +11555,11 @@ body.sticky-header .navbar {
 	flex: 0 0 72%;
 }
 
+.breadcrumbs {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 }
 
 @media (max-width: 767.98px) {
@@ -11812,6 +11826,18 @@ main {
 .opinion .quotes .quotes-item .opinion-author {
 	width: 85px;
 	height: 85px;
+}
+
+.main-news {
+	padding: 115px 0px 65px 0px;
+}
+
+.breadcrumbs {
+	display: none;
+}
+
+.display {
+	display: none;
 }
 
 }

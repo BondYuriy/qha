@@ -9,6 +9,26 @@
   margin-bottom: 50px;
 }
 
+.text-link {
+  font-family: $OpenSans_Regular;
+  font-size: 17px;
+  line-height: 28px;
+  color: $dark-blue;
+  border-bottom: $dark-blue solid 2px;
+
+  &:hover {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+}
+
+.important-text {
+  background-color: $blue;
+  color: $light-gray;
+  padding: 0 3px;
+  font-weight: 400;
+}
+
 .chif-news_box {
   display: flex;
   flex-direction: column;
@@ -57,6 +77,11 @@
   border-radius: 13px;
   position: relative;
   margin-right: 15px;
+
+  & img {
+    @extend %img;
+    border-radius: 13px;
+  }
 
   &::before {
     display: block;
@@ -112,7 +137,8 @@
 
 .sidebar-newsbig {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 58px;
 }
 
@@ -121,6 +147,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 10px;
+  text-align: center;
 
   & .aricle-author {
     position: relative;
@@ -161,8 +189,7 @@
 }
 
 .aricle-author-box {
-  margin-bottom: 55%;
-  padding-top: 50%;
+  flex: 0 0 30%;
 
   &::after {
     display: block;
@@ -175,6 +202,8 @@
 }
 
 .subtitle {
+  align-self: flex-start;
+  flex: 0 0 30%;
   color: $dark-blue;
   font-family: $Pf_Din;
   font-size: 35px;
@@ -187,7 +216,7 @@
 }
 
 .article {
-  padding: 15px;
+  padding: 0 15px 15px 15px;
 
   & p {
     color: #000000;
@@ -195,7 +224,7 @@
     font-size: 17px;
     line-height: 28px;
 
-    & strong {
+    & .strong-text {
       font-weight: 700;
     }
   }
@@ -211,10 +240,10 @@
     align-items: center;
     background-color: #fff;
     border-radius: 13px;
-    padding: 30px 12px 50px 30px;
+    padding: 30px 12px 50px 12px;
 
     & .author-name {
-      flex: 0 0 25%;
+      flex: 0 0 26%;
       color: #5d6267;
       font-family: $Pf_Din;
       font-size: 22px;
@@ -225,12 +254,13 @@
 
     & .article-quote-text {
       position: relative;
-      flex: 0 0 70%;
+      flex: 0 0 74%;
       color: #5d6267;
       font-family: $OpenSans_Regular;
       font-size: 14px;
       font-weight: 300;
       font-style: italic;
+      padding-left: 50px;
 
       &::before {
         display: inline-block;
@@ -239,7 +269,7 @@
         height: 28px;
         background-image: url("../img/quote.svg");
         position: absolute;
-        left: -60px;
+        left: 0px;
         top: -5px;
         fill: #236092;
       }
@@ -272,7 +302,7 @@
     content: "";
     width: 30px;
     height: 28px;
-    background-image: url("../../img/quote-blue.svg");
+    background-image: url("../img/quote-blue.svg");
     position: absolute;
     left: -60px;
     top: -5px;
@@ -308,6 +338,11 @@
       rgba(50, 69, 88, 0.92) 100%
     );
     z-index: 1;
+  }
+
+  & img {
+    @extend %img;
+    border-radius: 13px;
   }
 
   & span {
@@ -464,5 +499,103 @@
     background-image: url("../img/folded-newspaper.svg");
     margin-right: 12px;
     vertical-align: middle;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper-quote .article-quote {
+    flex-direction: column;
+  }
+
+  .news-statistics_box .news-statistics li {
+    flex: 0 0 100%;
+  }
+
+  .wrapper-quote .article-quote {
+    & .aricle-author-box, .aricle-author-box2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .wrapper-quote .article-quote .author-name{
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-newsbig {
+    flex-direction: column;
+  }
+
+  .aricle-author-box {
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    flex: 0 0 100%;
+    margin: auto;
+
+    & span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .news-statistics_box {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .chif-news_box {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & .btn {
+      margin: 0;
+      margin-right: 15px;
+    }
+
+    & .breadcrumb {
+      margin: 0;
+      flex-direction: row;
+      align-items: center;
+      height: 21px;
+    }
+
+    & h1 {
+      margin: 0;
+      margin: 20px 0;
+    }
+
+    & .date-1 {
+      margin: 0;
+    }
+
+    & .social2 {
+      margin-left: auto;
+    }
+  }
+
+  .news-foto_container {
+    margin-left: 15px;
+  }
+
+  .sidebar-newsbig {
+    padding: 15px;
+  }
+
+  .subtitle {
+    padding: 5px;
+  }
+
+  .article-img_box {
+    margin: 0 15px;
+  }
+
+  .wrapper-quote {
+    padding: 18px;
   }
 }

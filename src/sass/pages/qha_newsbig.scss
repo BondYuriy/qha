@@ -5,14 +5,15 @@
 .wrapper-bignews {
   border-radius: 17px;
   background-color: #fff;
-  padding: 15px 15px 15px 58px;
+  padding: 15px 0 30px 0;
+  margin-bottom: 50px;
 }
 
 .chif-news_box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0px 0px 0px;
+  padding: 60px 0px 0px 58px;
 
   & .btn {
     margin-bottom: 44px;
@@ -55,6 +56,7 @@
   background-color: $blue;
   border-radius: 13px;
   position: relative;
+  margin-right: 15px;
 
   &::before {
     display: block;
@@ -111,14 +113,14 @@
 .sidebar-newsbig {
   display: flex;
   flex-direction: column;
+  padding-left: 58px;
 }
 
-.aricle-author-box {
+.aricle-author-box,
+.aricle-author-box2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 45%;
-  padding-top: 45%;
 
   & .aricle-author {
     position: relative;
@@ -156,6 +158,11 @@
     font-size: 17px;
     font-weight: 400;
   }
+}
+
+.aricle-author-box {
+  margin-bottom: 55%;
+  padding-top: 50%;
 
   &::after {
     display: block;
@@ -180,6 +187,8 @@
 }
 
 .article {
+  padding: 15px;
+
   & p {
     color: #000000;
     font-family: $OpenSans_Regular;
@@ -192,26 +201,268 @@
   }
 }
 
-.article-quote {
-  display: flex;
-  justify-content: space-between;
+.wrapper-quote {
+  background-color: rgba(170, 185, 200, 0.36);
+  padding: 18px 18px 18px 58px;
 
-  & span {
-    flex: 0 0 30%;
-    color: #5d6267;
-    font-family: $Pf_Din;
-    font-size: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 24px;
+  & .article-quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 30px 12px 50px 30px;
+
+    & .author-name {
+      flex: 0 0 25%;
+      color: #5d6267;
+      font-family: $Pf_Din;
+      font-size: 22px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 24px;
+    }
+
+    & .article-quote-text {
+      position: relative;
+      flex: 0 0 70%;
+      color: #5d6267;
+      font-family: $OpenSans_Regular;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 30px;
+        height: 28px;
+        background-image: url("../img/quote.svg");
+        position: absolute;
+        left: -60px;
+        top: -5px;
+        fill: #236092;
+      }
+
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 30px;
+        height: 28px;
+        background-image: url("../img/quote.svg");
+        position: absolute;
+        bottom: -40px;
+        right: 10px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.article .article-comment {
+  position: relative;
+  color: $dark-blue;
+  font-family: $Pf_Din;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 28px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 28px;
+    background-image: url("../../img/quote-blue.svg");
+    position: absolute;
+    left: -60px;
+    top: -5px;
+    fill: #236092;
+  }
+}
+
+.article-img_box {
+  height: 570px;
+  margin-left: 58px;
+  margin-right: 15px;
+  background-color: $blue;
+  border-radius: 13px;
+  position: relative;
+  color: #fff;
+  font-family: $Pf_Din;
+  font-size: 17px;
+  font-weight: 400;
+
+  &::before {
+    display: block;
+    content: " ";
+    border-radius: 0 0 13px 13px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    background-image: linear-gradient(
+      180deg,
+      rgba(170, 185, 200, 0) 0%,
+      rgba(107, 124, 142, 0.48) 38%,
+      rgba(50, 69, 88, 0.92) 100%
+    );
+    z-index: 1;
   }
 
-  & p {
-    flex: 0 0 65%;
-    color: #5d6267;
-    font-family: $OpenSans_Regular;
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
+  & span {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    z-index: 5;
+  }
+}
+
+.article-quote .aricle-author-box2 .authore-info {
+  color: $blue;
+  font-family: $Pf_Din;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.news-statistics_box {
+  padding: 0px 23px 0px 58px;
+  color: #000;
+  font-family: $OpenSans_Regular;
+  font-size: 18px;
+  text-align: center;
+
+  & .news-statistics_title {
+    color: #000;
+    font-family: $Pf_Din;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    text-transform: uppercase;
+    margin-bottom: 58px;
+  }
+
+  & .news-statistics {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+
+    & li {
+      flex: 0 0 40%;
+      min-height: 230px;
+      text-align: center;
+      padding-bottom: 20px;
+      position: relative;
+      margin-bottom: 30px;
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 54px;
+        height: 14px;
+        background-image: url("../img/sea-waves2.svg");
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      & span {
+        color: $dark-blue;
+        font-family: $Pf_Din;
+        font-size: 55px;
+        font-weight: 500;
+      }
+
+      & p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.resume {
+  color: $dark-blue;
+  font-family: $Pf_Din;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27px;
+  position: relative;
+  padding: 50px 0px;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 54px;
+    height: 14px;
+    background-image: url("../img/sea-waves2.svg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 54px;
+    height: 14px;
+    background-image: url("../img/sea-waves2.svg");
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  & li {
+    margin-bottom: 10px;
+    padding: 0px 15px 0px 60px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $dark-blue;
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    & p {
+      margin: 0;
+    }
+  }
+}
+
+.title-category_newsbig {
+  color: $blue;
+  font-family: $Pf_Din;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 36px;
+    height: 30px;
+    background-image: url("../img/folded-newspaper.svg");
+    margin-right: 12px;
+    vertical-align: middle;
   }
 }

@@ -1,0 +1,54 @@
+.breadcrumb {
+  @extend %Reset;
+  background-color: rgba(0, 0, 0, 0);
+
+  & ul {
+    display: flex;
+    align-items: center;
+
+    & li {
+      padding-left: 15px;
+      margin-right: 10px;
+      position: relative;
+
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $blue;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+
+      & a {
+        display: inline-block;
+        height: 26px;
+        color: $blue;
+        font-family: $Pf_Din;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: middle;
+      }
+
+      & span {
+        display: inline-block;
+        height: 26px;
+        color: $dark-blue;
+        font-family: $Pf_Din;
+        font-size: 15px;
+        font-weight: 400;
+        vertical-align: middle;
+      }
+    }
+  }
+}

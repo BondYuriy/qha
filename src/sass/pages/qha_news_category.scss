@@ -6,9 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 45px;
 }
 
 .title-options {
+  display: inline-block;
   color: $blue;
   font-family: $Pf_Din;
   font-size: 15px;
@@ -18,6 +20,8 @@
 }
 
 .breadcrumb-position {
+  min-height: 45px;
+
   & .rubric {
     color: $dark-blue;
     font-family: $Pf_Din;
@@ -28,57 +32,10 @@
   }
 }
 
-.breadcrumb {
-  @extend %Reset;
-  background-color: rgba(0, 0, 0, 0);
-
-  & ul {
-    display: flex;
-    align-items: center;
-
-    & li {
-      margin-right: 10px;
-
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &::before {
-        display: inline-block;
-        content: "";
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: $blue;
-        margin-right: 5px;
-      }
-
-      & a {
-        display: inline-block;
-        height: 26px;
-        color: $blue;
-        font-family: $Pf_Din;
-        font-size: 15px;
-        font-weight: 400;
-        text-decoration: none;
-        vertical-align: middle;
-      }
-
-      & span {
-        display: inline-block;
-        height: 26px;
-        color: $dark-blue;
-        font-family: $Pf_Din;
-        font-size: 15px;
-        font-weight: 400;
-        vertical-align: middle;
-      }
-    }
-  }
-}
-
 .display {
+  display: flex;
+  align-items: center;
+
   & a {
     display: inline-block;
     height: 23px;

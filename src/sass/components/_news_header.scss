@@ -1,0 +1,151 @@
+.news_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: relative;
+
+  & .logo_news {
+    width: 161px;
+    height: 27px;
+    flex: 0 0 15%;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  & .navbar_news {
+    flex: 0 0 60%;
+    height: 40px;
+
+    & ul {
+      padding-bottom: 3px;
+    }
+
+    & .navbar-form_news {
+      position: absolute;
+      bottom: 8px;
+      right: 0;
+
+      & .input-group {
+        & .submit_but {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 34px;
+          height: 34px;
+
+          & svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  & .languages_news {
+    flex: 0 0 18%;
+    padding-right: 50px;
+  }
+}
+
+body.sticky-header {
+  .header {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 575px) {
+  .news_header {
+    & .logo_news {
+      flex: 0 0 50%;
+    }
+
+    & .navbar_news {
+      flex: 0 0 0%;
+    }
+
+    & .languages_news {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .news_header {
+    & .logo_news {
+      flex: 0 0 35%;
+    }
+
+    & .navbar_news {
+      flex: 0 0 20%;
+    }
+
+    & .languages_news {
+      padding-right: 60px;
+      flex: 0 0 35%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .news_header {
+    position: relative;
+
+    & .logo_news {
+      flex: 0 0 27%;
+    }
+
+    & .navbar_news {
+      flex: 0 0 45%;
+
+      & ul {
+        & li {
+          border: 0;
+
+          & :hover {
+            border-bottom: #236092 solid 0px;
+          }
+
+          &.active {
+            border: 0;
+          }
+        }
+      }
+
+      & .navbar-toggler {
+        top: 6px;
+      }
+    }
+
+    & .languages_news {
+      padding-right: 60px;
+      flex: 0 0 35%;
+    }
+  }
+
+  .news_header .navbar_news .navbar-form_news .input-group .submit_but {
+    background-color: rgba(0, 0, 0, 0);
+
+    & svg {
+      fill: $dark-blue;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .news_header {
+    & .navbar_news {
+      flex: 0 0 60%;
+    }
+
+    & .languages_news {
+      padding-right: 40px;
+      flex: 0 0 18%;
+    }
+  }
+}
